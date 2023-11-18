@@ -1,12 +1,13 @@
-import React from 'react'
+import Navbar from '@/components/header/navbar/navbar'
 
-function Header(props) {
+export default function Header(props) {
     return (
-        <div>
-            Header
+        <>
+            {/* Navbar */}
+            <Navbar />
+
+            {/* Header content */}
             {props.children}
-        </div>
+        </>
     )
 }
-
-export default Header
