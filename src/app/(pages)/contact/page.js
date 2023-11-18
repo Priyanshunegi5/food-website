@@ -1,14 +1,37 @@
-import Link from 'next/link'
-import { Button, ButtonGroup } from '@nextui-org/react'
+import { headers } from 'next/headers'
+import { web } from '@/config/router/web'
+import { setting } from '@/data/setting'
+import useRouter from '@/hooks/useRouter'
+import { layouts } from '@/data/layouts/layout'
+import Layout from '@/components/layouts/layout'
+import Faqs from '@/app/(pages)/contact/_components/faqs'
+import Hero from '@/app/(pages)/contact/_components/hero'
+import Motivate from '@/app/(pages)/contact/_components/motivate'
 
-export default function () {
+export const metadata = {}
+
+export default function Contact() {
+    const url = headers().get('x-pathname') || '/'
+    const route = useRouter(web).getRouteByPath(url)
+
+    if (route !== null) {
+        metadata.description = setting.description
+        metadata.title = `${setting?.shortName} - ${route?.name}`
+    }
+
     return (
-        <>
-            <h1>Contact Page</h1>
-            <br />
-            <Link href="/">
-                <Button color="primary">Home Page</Button>
-            </Link>
-        </>
+        <Layout type={layouts.maximmal}>
+            {/* Main Section */}
+            <Hero />
+
+            {/* Help Section */}
+            <>
+                {/* Motivational Lecture */}
+                <Motivate />
+
+                {/* Frequently Asked Questions */}
+                <Faqs />
+            </>
+        </Layout>
     )
 }
