@@ -6,83 +6,67 @@ export default function WhyUs() {
     const UniqueFeatures = [
         {
             icon: <HeartIcon />,
-            title: 'Lorem ipsum leo laoreet aptent',
+            title: 'loyalty',
             description: `
-                Lorem ipsum leo laoreet aptent vulputate
-                fusce gravida suspendisse eros luctus imperdiet suscipit,
-                sapien eget gravida hendrerit egestas est blandit vivamus
+            The toughest guys to please are pani puri lovers. They are also the most loyal to their pani puri wala.
+            Golgappas are best enjoyed with brothers
+            
             `,
         },
         {
             icon: <HeartIcon />,
-            title: 'Lorem ipsum leo laoreet aptent',
+            title: 'break time',
             description: `
-                Lorem ipsum leo laoreet aptent vulputate
-                fusce gravida suspendisse eros luctus imperdiet suscipit,
-                sapien eget gravida hendrerit egestas est blandit vivamus
+            Relationships are similar to pani puri, if you hold on too tight, it may break.
             `,
         },
         {
             icon: <HeartIcon />,
-            title: 'Lorem ipsum leo laoreet aptent',
+            title: 'multitasking skills',
             description: `
-                Lorem ipsum leo laoreet aptent vulputate
-                fusce gravida suspendisse eros luctus imperdiet suscipit,
-                sapien eget gravida hendrerit egestas est blandit vivamus
+            “Pani Puri: The ultimate test of your multitasking skills – trying not to spill while savoring the taste explosion! 😅🌮 #MultitaskingChampion”
             `,
         },
         {
             icon: <HeartIcon />,
-            title: 'Lorem ipsum leo laoreet aptent',
+            title: 'PaniPuriChampion',
             description: `
-                Lorem ipsum leo laoreet aptent vulputate
-                fusce gravida suspendisse eros luctus imperdiet suscipit,
-                sapien eget gravida hendrerit egestas est blandit vivamus
+            “If Pani Puri were a sport, I’d be an Olympic gold medalist! 🏅🌮 #PaniPuriChampion”
             `,
         },
         {
             icon: <HeartIcon />,
-            title: 'Lorem ipsum leo laoreet aptent',
+            title: 'friendships',
             description: `
-                Lorem ipsum leo laoreet aptent vulputate
-                fusce gravida suspendisse eros luctus imperdiet suscipit,
-                sapien eget gravida hendrerit egestas est blandit vivamus
+            “If someone says they don’t like Pani Puri, it’s time to reevaluate that friendship. 🙅‍♂️🌮 #PaniPuriLover”
             `,
         },
         {
             icon: <HeartIcon />,
-            title: 'Lorem ipsum leo laoreet aptent',
+            title: 'NeverEndingSurprises',
             description: `
-                Lorem ipsum leo laoreet aptent vulputate
-                fusce gravida suspendisse eros luctus imperdiet suscipit,
-                sapien eget gravida hendrerit egestas est blandit vivamus
+            “Pani Puri is like that one friend who keeps surprising you, and you can’t get enough of them! 🌮🎉 #NeverEndingSurprises”
             `,
         },
         {
             icon: <HeartIcon />,
-            title: 'Lorem ipsum leo laoreet aptent',
+            title: 'TasteBudThrills',
             description: `
-                Lorem ipsum leo laoreet aptent vulputate
-                fusce gravida suspendisse eros luctus imperdiet suscipit,
-                sapien eget gravida hendrerit egestas est blandit vivamus
+            Pani Puri is like a rollercoaster ride for your taste buds – you never know when the twist and turns will hit! 🎢🌮 #TasteBudThrills”
             `,
         },
         {
             icon: <HeartIcon />,
-            title: 'Lorem ipsum leo laoreet aptent',
+            title: 'PaniPuriWisdom',
             description: `
-                Lorem ipsum leo laoreet aptent vulputate
-                fusce gravida suspendisse eros luctus imperdiet suscipit,
-                sapien eget gravida hendrerit egestas est blandit vivamus
+            Hindi-English Special: ‘Pani Puri khate waqt, zindagi ka saar chhodo!’ 🌮🍹 #PaniPuriWisdom”
             `,
         },
         {
             icon: <HeartIcon />,
-            title: 'Lorem ipsum leo laoreet aptent',
+            title: 'PaniPuriJoy',
             description: `
-                Lorem ipsum leo laoreet aptent vulputate
-                fusce gravida suspendisse eros luctus imperdiet suscipit,
-                sapien eget gravida hendrerit egestas est blandit vivamus
+            “Pani Puri is my kind of ‘happy place’ – where happiness explodes in every bite! 😂🌮 #PaniPuriJoy”
             `,
         },
     ]
@@ -91,7 +75,7 @@ export default function WhyUs() {
         <section className="relative block px-6 py-10 md:py-20 md:px-10 border-t border-b">
             <div className="relative mx-auto max-w-5xl text-center">
                 {/* Encourage */}
-                <span className=" my-3 flex items-center justify-center font-medium uppercase tracking-wider">
+                <span className="  text-[#FFBF31] my-3 flex items-center justify-center font-medium uppercase tracking-wider">
                     Why choose us
                 </span>
 
@@ -102,14 +86,14 @@ export default function WhyUs() {
 
                 {/* Title */}
                 <h2 className="block w-full bg-gradient-to-b bg-clip-text font-bold text-3xl sm:text-4xl pt-10">
-                    We Make Food, That Customers Love
+                    We Make Food, That{' '}
+                    <span className=" text-[#FFBF31]">Customers</span> Love
                 </h2>
 
                 {/* Description */}
-                <p className="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide">
-                    Lorem ipsum leo laoreet aptent vulputate fusce gravida
-                    suspendisse eros luctus imperdiet suscipit, sapien eget
-                    gravida hendrerit egestas est blandit vivamus
+                <p className="   mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide">
+                    Indulge in the burst of flavors with every bite of our
+                    authentic Gul Guppa
                 </p>
             </div>
 

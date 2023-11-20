@@ -15,7 +15,7 @@ export default function Footer(props) {
     // TODO: Use router web for creating links
     const linkGroups = [
         {
-            title: 'Category 1',
+            title: 'where are we ..!',
             links: [
                 {
                     title: 'Link 1',
@@ -40,7 +40,7 @@ export default function Footer(props) {
             ],
         },
         {
-            title: 'Category 2',
+            title: 'Links',
             links: [
                 {
                     title: 'Link 1',
@@ -65,23 +65,23 @@ export default function Footer(props) {
             ],
         },
         {
-            title: 'Category 3',
+            title: 'Get in touch ',
             links: [
                 {
-                    title: 'Link 1',
+                    title: 'facebook',
                     href: '/',
                 },
                 {
-                    title: 'Link 2',
+                    title: 'twitter',
                     href: '/',
                 },
                 {
-                    title: 'Link 3',
-                    href: '/',
+                    title: 'linked in',
+                    href: 'https://www.linkedin.com/in/nishant-tomar-3a36534b/',
                 },
                 {
-                    title: 'Link 4',
-                    href: '/',
+                    title: 'instagram',
+                    href: 'https://www.instagram.com/ausgolguppaywala/',
                 },
                 {
                     title: 'Link 5',
@@ -136,7 +136,7 @@ export default function Footer(props) {
                                                         href={link?.href}
                                                         class="hover:underline"
                                                     >
-                                                        {link?.title}
+                                                        {link.title}
                                                     </NextLink>
                                                 </li>
                                             )

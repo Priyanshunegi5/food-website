@@ -6,3 +6,13 @@ body {
     min-width: 260px;
     background-color: gray;
 }
+.img-Reviews {
+    width: 100px;
+}
+.top-span {
+    color: #ffbf31;
+}
+video {
+    width: 100%;
+    height: auto;
+}

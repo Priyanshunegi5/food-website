@@ -30,7 +30,7 @@ export default function MenuLarge() {
             image: {
                 width: '100%',
                 height: 'auto',
-                src: `https://source.unsplash.com/random/200x200?sig=${sig}`,
+                src: `https://australiangolguppaywala.com/images/fastfood/gallery1.jpg`,
             },
         },
         {
@@ -41,7 +41,7 @@ export default function MenuLarge() {
             image: {
                 width: '100%',
                 height: 'auto',
-                src: `https://source.unsplash.com/random/200x200?sig=${sig}`,
+                src: `https://australiangolguppaywala.com/images/fastfood/gallery2.jpg`,
             },
         },
         {
@@ -52,7 +52,7 @@ export default function MenuLarge() {
             image: {
                 width: '100%',
                 height: 'auto',
-                src: `https://source.unsplash.com/random/200x200?sig=${sig}`,
+                src: `https://australiangolguppaywala.com/images/fastfood/gallery3.jpg`,
             },
         },
         {
@@ -63,7 +63,7 @@ export default function MenuLarge() {
             image: {
                 width: '100%',
                 height: 'auto',
-                src: `https://source.unsplash.com/random/200x200?sig=${sig}`,
+                src: `https://australiangolguppaywala.com/images/fastfood/gallery4.jpg`,
             },
         },
         {
@@ -74,7 +74,7 @@ export default function MenuLarge() {
             image: {
                 width: '100%',
                 height: 'auto',
-                src: `https://source.unsplash.com/random/200x200?sig=${sig}`,
+                src: `https://australiangolguppaywala.com/images/fastfood/gallery13.jpg`,
             },
         },
         {
@@ -85,7 +85,7 @@ export default function MenuLarge() {
             image: {
                 width: '100%',
                 height: 'auto',
-                src: `https://source.unsplash.com/random/200x200?sig=${sig}`,
+                src: `https://australiangolguppaywala.com/images/fastfood/gallery5.jpg`,
             },
         },
         {
@@ -96,7 +96,7 @@ export default function MenuLarge() {
             image: {
                 width: '100%',
                 height: 'auto',
-                src: `https://source.unsplash.com/random/200x200?sig=${sig}`,
+                src: `https://australiangolguppaywala.com/images/fastfood/gallery6.jpg`,
             },
         },
         {
@@ -107,7 +107,7 @@ export default function MenuLarge() {
             image: {
                 width: '100%',
                 height: 'auto',
-                src: `https://source.unsplash.com/random/200x200?sig=${sig}`,
+                src: `https://australiangolguppaywala.com/images/fastfood/gallery12.jpg`,
             },
         },
     ]
@@ -167,8 +167,8 @@ export default function MenuLarge() {
                                 {/* Title */}
                                 <b>{item.title}</b>
 
-                                {/* Price */}
-                                <p className="text-default-500">{item.price}</p>
+                                {/* Price
+                                <p className="text-default-500">{item.price}</p> */}
                             </CardFooter>
                         </Card>
                     ))}
