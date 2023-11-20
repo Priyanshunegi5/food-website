@@ -9,10 +9,10 @@ export default function Hero() {
     // TODO: Fetch video from the server
     const background = {
         image: {
-            src: 'https://wallpapercave.com/wp/wp5746594.jpg',
+            src: 'https://static.toiimg.com/photo/75831269.cms',
         },
         video: {
-            src: 'https://cdn2.unrealengine.com/homepage-opener-5a55a50aaa4c.mp4',
+            src: 'https://www.udrop.com/file/L8NZ/10000000_656235423299066_8969595181737720723_n.mp4',
         },
     }
 

@@ -43,7 +43,7 @@ export default function DirectiveInformation() {
                         alt="Content 1"
                         className="w-full rounded-lg"
                         src={
-                            'https://source.unsplash.com/random/370x527?sig=' +
+                            'https://australiangolguppaywala.com/images/fastfood/team-1.jpg' +
                             Date.now()
                         }
                     />

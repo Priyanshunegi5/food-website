@@ -31,7 +31,7 @@ export default function MenuShort() {
             image: {
                 width: '100%',
                 height: 'auto',
-                src: `https://source.unsplash.com/random/200x200?sig=${sig}`,
+                src: 'https://australiangolguppaywala.com/images/fastfood/gallery1.jpg',
             },
         },
         {
@@ -42,7 +42,7 @@ export default function MenuShort() {
             image: {
                 width: '100%',
                 height: 'auto',
-                src: `https://source.unsplash.com/random/200x200?sig=${sig}`,
+                src: `https://australiangolguppaywala.com/images/fastfood/gallery5.jpg`,
             },
         },
         {
@@ -53,7 +53,7 @@ export default function MenuShort() {
             image: {
                 width: '100%',
                 height: 'auto',
-                src: `https://source.unsplash.com/random/200x200?sig=${sig}`,
+                src: `https://australiangolguppaywala.com/images/fastfood/gallery6.jpg`,
             },
         },
         {
@@ -64,7 +64,7 @@ export default function MenuShort() {
             image: {
                 width: '100%',
                 height: 'auto',
-                src: `https://source.unsplash.com/random/200x200?sig=${sig}`,
+                src: `https://australiangolguppaywala.com/images/fastfood/gallery12.jpg`,
             },
         },
         {
@@ -75,7 +75,7 @@ export default function MenuShort() {
             image: {
                 width: '100%',
                 height: 'auto',
-                src: `https://source.unsplash.com/random/200x200?sig=${sig}`,
+                src: `https://australiangolguppaywala.com/images/fastfood/gallery2.jpg`,
             },
         },
         {
@@ -86,7 +86,7 @@ export default function MenuShort() {
             image: {
                 width: '100%',
                 height: 'auto',
-                src: `https://source.unsplash.com/random/200x200?sig=${sig}`,
+                src: `https://australiangolguppaywala.com/images/fastfood/gallery3.jpg`,
             },
         },
     ]
@@ -136,22 +136,22 @@ export default function MenuShort() {
                                         </span>
 
                                         {/* Title */}
-                                        <p class="text-lg font-bold truncate block capitalize">
+                                        {/* <p class="text-lg font-bold truncate block capitalize">
                                             <b>{item.title}</b>
-                                        </p>
+                                        </p> */}
 
                                         {/* Price */}
                                         <div class="flex items-center">
                                             {/* Item Price Discouted */}
-                                            <p class="text-lg font-semibold cursor-auto my-3">
+                                            {/* <p class="text-lg font-semibold cursor-auto my-3">
                                                 {item.price}
-                                            </p>
+                                            </p> */}
 
                                             {/* Item Price Actual */}
                                             <del>
-                                                <p class="text-sm text-gray-600 cursor-auto ml-2">
+                                                {/* <p class="text-sm text-gray-600 cursor-auto ml-2">
                                                     {item.price}
-                                                </p>
+                                                </p> */}
                                             </del>
 
                                             {/* Add To Cart Icon */}

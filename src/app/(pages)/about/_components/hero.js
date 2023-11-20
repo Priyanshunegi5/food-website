@@ -1,4 +1,5 @@
 import { Image } from '@nextui-org/react'
+import Nishant from '../../../../components/images/Nishant.jpg'
 
 export default function Hero() {
     return (
@@ -17,10 +18,12 @@ export default function Hero() {
 
                         {/* Description */}
                         <p className="text-sm pt-5 sm:text-base text-gray-700 dark:text-white text-justify">
-                            Dimension of reality that makes change possible and
-                            understandable. An indefinite and homogeneous
-                            environment in which natural events and human
-                            existence take place.
+                            After their successful stint in Australia,
+                            experiencing different cultures and cuisines, the
+                            two friends, Honey & Nishant, decided it was time to
+                            move back to their roots in India to start a new
+                            phase of their lives with "Australian Gol Guppay
+                            Wala".
                         </p>
                     </div>
 
@@ -29,8 +32,9 @@ export default function Hero() {
                         <div className="max-w-xs md:max-w-sm m-auto">
                             <Image
                                 src={
-                                    'https://source.unsplash.com/random/370x527?sig=' +
-                                    Date.now()
+                                    Nishant.jpg
+                                    //     {Nishant} +
+                                    //     Date.now()
                                 }
                             />
                         </div>
