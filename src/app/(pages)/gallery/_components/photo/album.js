@@ -1,7 +1,20 @@
 'use client'
 
-import { useState } from 'react'
+import 'yet-another-react-lightbox/styles.css'
+import 'yet-another-react-lightbox/plugins/counter.css'
+import 'yet-another-react-lightbox/plugins/captions.css'
+
+import { useRef, useState } from 'react'
 import { Image } from '@nextui-org/react'
+import Lightbox from 'yet-another-react-lightbox'
+import Zoom from 'yet-another-react-lightbox/plugins/zoom'
+import Share from 'yet-another-react-lightbox/plugins/share'
+import Video from 'yet-another-react-lightbox/plugins/video'
+import Counter from 'yet-another-react-lightbox/plugins/counter'
+import Download from 'yet-another-react-lightbox/plugins/download'
+import Captions from 'yet-another-react-lightbox/plugins/captions'
+import Slideshow from 'yet-another-react-lightbox/plugins/slideshow'
+import Fullscreen from 'yet-another-react-lightbox/plugins/fullscreen'
 import Category from '@/app/(pages)/gallery/_components/photo/category'
 
 export default function Album() {
@@ -152,17 +165,51 @@ export default function Album() {
         setCurrImages(images.filter(image => image?.category === currCategory))
     }
 
+    const captionsRef = useRef(null)
+    const [index, setIndex] = useState(-1)
+
     return (
         <>
             <section className="container mx-auto max-w-7xl px-6 flex-grow">
                 {/* Gallery Categories */}
                 <Category categories={categories} onUpdate={onCategoryUpdate} />
 
+                <Lightbox
+                    index={index}
+                    layout="columns"
+                    open={index >= 0}
+                    slides={getImages()}
+                    close={() => setIndex(-1)}
+                    counter={{
+                        container: { style: { top: 'unset', bottom: '20px' } },
+                    }}
+                    plugins={[
+                        Zoom,
+                        Share,
+                        Video,
+                        Counter,
+                        Captions,
+                        Download,
+                        Slideshow,
+                        Fullscreen,
+                    ]}
+                    on={{
+                        click: () => {
+                            ;(captionsRef.current?.visible
+                                ? captionsRef.current?.hide
+                                : captionsRef.current?.show)?.()
+                        },
+                    }}
+                />
+
                 {/* Gallery Images */}
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
                     {currImages.map((image, index) => {
                         return (
-                            <div key={`GalleryImage-${index}`}>
+                            <div
+                                key={`GalleryImage-${index}`}
+                                onClick={() => setIndex(index)}
+                            >
                                 <Image
                                     isZoomed
                                     src={image?.src}
