@@ -4,7 +4,7 @@ import React from 'react'
 import { map } from 'lodash'
 import { useTheme } from 'next-themes'
 import { Button } from '@nextui-org/react'
-import { SocialMedias } from '@/data/social-medias'
+import { socialMedias } from '@/data/social-medias'
 
 export default function JoinHero() {
     const { theme } = useTheme()
@@ -20,7 +20,7 @@ export default function JoinHero() {
 
                 {/* Social Medias Links */}
                 <div className="flex flex-wrap justify-center items-center mt-8 sm:justify-between">
-                    {map(SocialMedias, (value, key) => {
+                    {map(socialMedias, (value, key) => {
                         return (
                             <a
                                 target="_blank"

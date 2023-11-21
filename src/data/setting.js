@@ -45,7 +45,7 @@ export const setting = {
     colors: ['#00008B', '#FF0000'],
     shortName: 'AusGGW',
     name: 'Australian Gol Guppay Wala',
-    logo: '/favicons/favicon-32x32.png',
+    logo: '/favicons/favicon.ico',
     description: '(AusGGW) - Australian Gol Guppay Wala',
     themeColor: [
         { media: '(prefers-color-scheme: light)', color: 'white' },

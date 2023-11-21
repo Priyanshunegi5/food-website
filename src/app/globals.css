@@ -3,21 +3,11 @@
 @tailwind utilities;
 
 body {
-    min-width: 260px;
+    min-width: 360px;
     background-color: gray;
 }
-.img-Reviews {
-    width: 100px;
-}
-.top-span {
-    color: #ffbf31;
-}
+
 video {
     width: 100%;
     height: auto;
 }
-
-/* 
-.img-reviews{
-    border-radius: 100%;
-} */

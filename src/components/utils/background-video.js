@@ -40,6 +40,7 @@ export default function BackgroundVideo({
                         loop="loop"
                         playsInline
                         autoPlay="autoplay"
+                        poster={imageSource}
                         style={{
                             filter: `blur(${blur}px)`,
                             WebkitFilter: `blur(${blur}px)`,
