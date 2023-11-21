@@ -100,20 +100,21 @@ export default function Reviews() {
 
                     {/* Description */}
                     <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-                        here are some review f
+                        here are some review
                     </p>
                 </div>
 
-                <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <div className="grid   gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                     {reviews.map((review, index) => {
                         return (
                             <div
                                 key={`Review-${index}`}
-                                className="text-center text-gray-500 dark:text-gray-400"
+                                className="text-center text-gray-500 dark:text-gray-400 "
                             >
                                 {/* Author Image */}
-                                <div className="mx-auto mb-4 w-20 h-36 img-Reviews ">
+                                <div className="mx-auto mb-4 w-20 h-36 ">
                                     <Image
+                                        radius="full"
                                         alt={review?.author}
                                         src={review?.image?.src}
                                         className="rounded-full"

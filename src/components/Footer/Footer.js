@@ -18,23 +18,19 @@ export default function Footer(props) {
             title: 'where are we ..!',
             links: [
                 {
-                    title: 'Link 1',
+                    title: 'Oasis Mall, Haridwar Rd, Dehradun, Uttarakhand 248005',
                     href: '/',
                 },
                 {
-                    title: 'Link 2',
+                    title: '+919548557295',
                     href: '/',
                 },
                 {
-                    title: 'Link 3',
+                    title: 'info@australiangolguppaywala.com',
                     href: '/',
                 },
                 {
-                    title: 'Link 4',
-                    href: '/',
-                },
-                {
-                    title: 'Link 5',
+                    title4: '',
                     href: '/',
                 },
             ],
