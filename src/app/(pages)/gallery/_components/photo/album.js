@@ -1,7 +1,21 @@
 'use client'
 
+import 'yet-another-react-lightbox/styles.css'
+import 'yet-another-react-lightbox/plugins/counter.css'
+import 'yet-another-react-lightbox/plugins/captions.css'
+
+import { useRef, useState } from 'react'
 import { Image } from '@nextui-org/react'
-import { useEffect, useState } from 'react'
+import Lightbox from 'yet-another-react-lightbox'
+import Zoom from 'yet-another-react-lightbox/plugins/zoom'
+import Share from 'yet-another-react-lightbox/plugins/share'
+import Video from 'yet-another-react-lightbox/plugins/video'
+import Counter from 'yet-another-react-lightbox/plugins/counter'
+import Download from 'yet-another-react-lightbox/plugins/download'
+import Captions from 'yet-another-react-lightbox/plugins/captions'
+import Slideshow from 'yet-another-react-lightbox/plugins/slideshow'
+import Fullscreen from 'yet-another-react-lightbox/plugins/fullscreen'
+import Category from '@/app/(pages)/gallery/_components/photo/category'
 
 export default function Album() {
     // TODO: Fetch gallery images categories from server
@@ -126,7 +140,6 @@ export default function Album() {
         },
     ]
 
-    const [currCategory, setCurrCategory] = useState(0)
     const [currImages, setCurrImages] = useState(images)
 
     const getImages = () => {
@@ -143,44 +156,62 @@ export default function Album() {
         })
     }
 
-    useEffect(() => {
+    const onCategoryUpdate = currCategory => {
         if (currCategory === 0) {
             setCurrImages(images)
             return
         }
 
         setCurrImages(images.filter(image => image?.category === currCategory))
-    }, [currCategory])
+    }
+
+    const captionsRef = useRef(null)
+    const [index, setIndex] = useState(-1)
 
     return (
         <>
             <section className="container mx-auto max-w-7xl px-6 flex-grow">
                 {/* Gallery Categories */}
-                <div class="flex items-center justify-center py-4 md:py-8 flex-wrap">
-                    {categories.map((category, index) => {
-                        return (
-                            <button
-                                type="button"
-                                onClick={() => setCurrCategory(category?.id)}
-                                key={`GalleryCategory-${index}:${category?.id}`}
-                                class={
-                                    currCategory !== category?.id
-                                        ? 'text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800'
-                                        : 'text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800'
-                                }
-                            >
-                                {category?.title}
-                            </button>
-                        )
-                    })}
-                </div>
+                <Category categories={categories} onUpdate={onCategoryUpdate} />
+
+                <Lightbox
+                    index={index}
+                    layout="columns"
+                    open={index >= 0}
+                    slides={getImages()}
+                    close={() => setIndex(-1)}
+                    counter={{
+                        container: { style: { top: 'unset', bottom: '20px' } },
+                    }}
+                    plugins={[
+                        Zoom,
+                        Share,
+                        Video,
+                        Counter,
+                        Captions,
+                        Download,
+                        Slideshow,
+                        Fullscreen,
+                    ]}
+                    on={{
+                        click: () => {
+                            ;(captionsRef.current?.visible
+                                ? captionsRef.current?.hide
+                                : captionsRef.current?.show)?.()
+                        },
+                    }}
+                />
 
                 {/* Gallery Images */}
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
                     {currImages.map((image, index) => {
                         return (
-                            <div key={`GalleryImage-${index}`}>
+                            <div
+                                key={`GalleryImage-${index}`}
+                                onClick={() => setIndex(index)}
+                            >
                                 <Image
+                                    isZoomed
                                     src={image?.src}
                                     alt={image?.title}
                                     title={image?.title}
