@@ -21,41 +21,25 @@ export default function Footer(props) {
                     title: 'Oasis Mall, Haridwar Rd, Dehradun, Uttarakhand 248005',
                     href: '/',
                 },
-                {
-                    title: '+919548557295',
-                    href: '/',
-                },
-                {
-                    title: 'info@australiangolguppaywala.com',
-                    href: '/',
-                },
-                {
-                    title4: '',
-                    href: '/',
-                },
             ],
         },
         {
             title: 'Links',
             links: [
                 {
-                    title: 'Link 1',
+                    title: 'HOME',
                     href: '/',
                 },
                 {
-                    title: 'Link 2',
+                    title: 'ABOUT',
                     href: '/',
                 },
                 {
-                    title: 'Link 3',
+                    title: 'CONTACT',
                     href: '/',
                 },
                 {
-                    title: 'Link 4',
-                    href: '/',
-                },
-                {
-                    title: 'Link 5',
+                    title: 'GALLERY',
                     href: '/',
                 },
             ],
@@ -64,34 +48,30 @@ export default function Footer(props) {
             title: 'Get in touch ',
             links: [
                 {
-                    title: 'facebook',
+                    title: 'Facebook',
+                    href: 'https://www.facebook.com/ausgolguppaywala/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0',
+                },
+                {
+                    title: 'Google',
                     href: '/',
                 },
                 {
-                    title: 'twitter',
-                    href: '/',
-                },
-                {
-                    title: 'linked in',
+                    title: 'Linked in',
                     href: 'https://www.linkedin.com/in/nishant-tomar-3a36534b/',
                 },
                 {
-                    title: 'instagram',
+                    title: 'Instgram',
                     href: 'https://www.instagram.com/ausgolguppaywala/',
-                },
-                {
-                    title: 'Link 5',
-                    href: '/',
                 },
             ],
         },
     ]
 
     return (
-        <footer class="p-4">
+        <footer class="p-4 ">
             <div class="mx-auto max-w-screen-xl">
-                <div class="md:flex md:justify-between">
-                    <div class="mb-6 md:mb-0">
+                <div class="md:flex md:justify-between ">
+                    <div class="mb-6 md:mb-0  ">
                         <NextLink
                             class="flex items-center"
                             href={router.getRouteByName('Home')}
@@ -101,7 +81,7 @@ export default function Footer(props) {
 
                             {/* Company Title */}
                             <span class="self-center pl-3 text-2xl font-semibold whitespace-nowrap dark:text-white">
-                                {setting?.name}
+                                {setting?.shortName}
                             </span>
                         </NextLink>
                     </div>
