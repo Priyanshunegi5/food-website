@@ -164,6 +164,7 @@ export default function Album() {
                         return (
                             <div key={`GalleryImage-${index}`}>
                                 <Image
+                                    isZoomed
                                     src={image?.src}
                                     alt={image?.title}
                                     title={image?.title}
