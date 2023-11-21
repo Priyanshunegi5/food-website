@@ -1,5 +1,4 @@
 import { Image } from '@nextui-org/react'
-import Nishant from '../../../../components/images/Nishant.jpg'
 
 export default function Hero() {
     return (
@@ -30,13 +29,7 @@ export default function Hero() {
                     {/* Image */}
                     <div className="hidden sm:block sm:w-1/3 lg:w-3/5  relative">
                         <div className="max-w-xs md:max-w-sm m-auto">
-                            <Image
-                                src={
-                                    Nishant.jpg
-                                    //     {Nishant} +
-                                    //     Date.now()
-                                }
-                            />
+                            <Image src="/img/Nishant.jpg" />
                         </div>
                     </div>
                 </div>
