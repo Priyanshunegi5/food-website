@@ -5,23 +5,28 @@ export default function FormLayout({ children }) {
     const details = [
         {
             icon: <HeartIcon />,
-            title: 'Press',
-            values: ['press@example.com', '+1 234-567-89'],
+            title: 'where are we...!',
+            values: [
+                'Oasis Mall ',
+                'Haridwar Rd ',
+                ' Dehradun ',
+                ' Uttarakhand 248005',
+            ],
         },
         {
             icon: <HeartIcon />,
-            title: 'Bug report',
-            values: ['bugs@example.com', '+1 234-567-89'],
+            title: 'Email',
+            values: ['info@', 'australiangolguppaywala.com'],
         },
         {
             icon: <HeartIcon />,
-            title: 'Sales questions',
-            values: ['sales@example.com', '+1 234-567-89'],
+            title: 'Contact Us',
+            values: ['+919548557295'],
         },
         {
             icon: <HeartIcon />,
-            title: 'Technical support',
-            values: ['support@example.com', '+1 234-567-89'],
+            title: 'Opening Hour',
+            values: ['Monday - Sunday', '11:00am - 10:00pm'],
         },
     ]
     return (
