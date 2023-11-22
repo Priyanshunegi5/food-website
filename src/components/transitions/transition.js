@@ -31,11 +31,17 @@ export default function Transition({ children }) {
         setHydrated(true)
     }, [hydrated])
 
-    if (!hydrated) {
-        return <>{children}</>
-    }
-
-    return (
+    return !hydrated ? (
+        <>
+            {cloneElement(
+                effectRef.current,
+                {
+                    key: pathname,
+                },
+                children,
+            )}
+        </>
+    ) : (
         <AnimatePresence>
             {cloneElement(
                 effectRef.current,
