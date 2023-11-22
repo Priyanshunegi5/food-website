@@ -2,12 +2,12 @@
 
 import {
     Card,
-    CardHeader,
-    CardBody,
-    CardFooter,
     Image,
-    Button,
+    CardBody,
+    CardHeader,
+    CardFooter,
 } from '@nextui-org/react'
+
 import { useState, useLayoutEffect } from 'react'
 
 export default function MenuLarge() {
