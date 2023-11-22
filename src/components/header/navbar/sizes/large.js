@@ -35,8 +35,8 @@ export default function Large({ router }) {
 
                         return (
                             <NavbarItem
-                                key={`${route.name}-${index}`}
                                 isActive={isActive}
+                                key={`${route.name}-${index}`}
                             >
                                 {/* Link to the page */}
                                 <NextLink
