@@ -9,6 +9,7 @@ import {
 
 import NextLink from 'next/link'
 import ThemeSwitch from '@/components/utils/theme-switch'
+import SquigglyUnderline from '@/components/framer/squiggly-underline'
 
 export default function Small({ router }) {
     return (
@@ -24,16 +25,24 @@ export default function Small({ router }) {
             <NavbarMenu>
                 {/* Navbar Menu */}
                 <div className="mx-4 mt-2 flex flex-col gap-2">
-                    {router.getRoutes()?.map((route, index) => (
-                        <NavbarMenuItem
-                            key={`${route.name}-${index}`}
-                            isActive={router.isActiveRoutePath(route.path)}
-                        >
-                            <NextLink href={route.path} size="lg">
-                                {route.name}
-                            </NextLink>
-                        </NavbarMenuItem>
-                    ))}
+                    {router.getRoutes()?.map((route, index) => {
+                        const isActive = router.isActiveRoutePath(route.path)
+
+                        return (
+                            <NavbarMenuItem
+                                isActive={isActive}
+                                key={`${route.name}-${index}`}
+                            >
+                                <NextLink href={route.path} size="lg">
+                                    {/* Link Name */}
+                                    {route.name}
+
+                                    {/* Underline */}
+                                    {isActive && <SquigglyUnderline />}
+                                </NextLink>
+                            </NavbarMenuItem>
+                        )
+                    })}
                 </div>
             </NavbarMenu>
         </>
