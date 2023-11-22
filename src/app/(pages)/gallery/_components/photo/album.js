@@ -21,122 +21,126 @@ export default function Album() {
     // TODO: Fetch gallery images categories from server
     const categories = [
         {
-            id: 0,
+            id: 1,
             title: 'All',
         },
         {
-            id: 1,
-            title: 'Lorem ipsum',
-        },
-        {
             id: 2,
-            title: 'Lorem ipsum',
+            title: 'Food',
         },
         {
             id: 3,
-            title: 'Lorem ipsum',
+            title: 'Place',
         },
         {
             id: 4,
-            title: 'Lorem ipsum',
+            title: 'Kitchen',
         },
         {
             id: 5,
-            title: 'Lorem ipsum',
-        },
-        {
-            id: 6,
-            title: 'Lorem ipsum',
-        },
-        {
-            id: 7,
-            title: 'Lorem ipsum',
-        },
-        {
-            id: 8,
-            title: 'Lorem ipsum',
-        },
-        {
-            id: 9,
-            title: 'Lorem ipsum',
-        },
-        {
-            id: 10,
-            title: 'Lorem ipsum',
+            title: 'Customer',
         },
     ]
 
     // TODO: Fetch gallery images from server
     const images = [
         {
-            id: Date.now(),
+            id: 1,
+            category: 2,
             title: 'Lorem ipsum',
-            src: `https://pic.re/image`,
             description: 'Lorem ipsum leo laoreet aptent',
-            category: Math.round(Math.random() * categories.length),
+            src: `https://australiangolguppaywala.com/images/fastfood/gallery1.jpg`,
         },
         {
-            id: Date.now(),
+            id: 2,
+            category: 4,
             title: 'Lorem ipsum',
-            src: `https://pic.re/image`,
             description: 'Lorem ipsum leo laoreet aptent',
-            category: Math.round(Math.random() * categories.length),
+            src: `https://australiangolguppaywala.com/images/fastfood/gallery2.jpg`,
         },
         {
-            id: Date.now(),
+            id: 3,
+            category: 4,
             title: 'Lorem ipsum',
-            src: `https://pic.re/image`,
             description: 'Lorem ipsum leo laoreet aptent',
-            category: Math.round(Math.random() * categories.length),
+            src: `https://australiangolguppaywala.com/images/fastfood/gallery3.jpg`,
         },
         {
-            id: Date.now(),
+            id: 4,
+            category: 2,
             title: 'Lorem ipsum',
-            src: `https://pic.re/image`,
             description: 'Lorem ipsum leo laoreet aptent',
-            category: Math.round(Math.random() * categories.length),
+            src: `https://australiangolguppaywala.com/images/fastfood/gallery4.jpg`,
         },
         {
-            id: Date.now(),
+            id: 5,
+            category: 2,
             title: 'Lorem ipsum',
-            src: `https://pic.re/image`,
             description: 'Lorem ipsum leo laoreet aptent',
-            category: Math.round(Math.random() * categories.length),
+            src: `https://australiangolguppaywala.com/images/fastfood/gallery5.jpg`,
         },
         {
-            id: Date.now(),
+            id: 6,
+            category: 5,
             title: 'Lorem ipsum',
-            src: `https://pic.re/image`,
             description: 'Lorem ipsum leo laoreet aptent',
-            category: Math.round(Math.random() * categories.length),
+            src: `https://australiangolguppaywala.com/images/fastfood/gallery6.jpg`,
         },
         {
-            id: Date.now(),
+            id: 7,
+            category: 5,
             title: 'Lorem ipsum',
-            src: `https://pic.re/image`,
             description: 'Lorem ipsum leo laoreet aptent',
-            category: Math.round(Math.random() * categories.length),
+            src: `https://australiangolguppaywala.com/images/fastfood/gallery7.jpg`,
         },
         {
-            id: Date.now(),
+            id: 8,
+            category: 5,
             title: 'Lorem ipsum',
-            src: `https://pic.re/image`,
             description: 'Lorem ipsum leo laoreet aptent',
-            category: Math.round(Math.random() * categories.length),
+            src: `https://australiangolguppaywala.com/images/fastfood/gallery8.jpg`,
         },
         {
-            id: Date.now(),
+            id: 9,
+            category: 5,
             title: 'Lorem ipsum',
-            src: `https://pic.re/image`,
             description: 'Lorem ipsum leo laoreet aptent',
-            category: Math.round(Math.random() * categories.length),
+            src: `https://australiangolguppaywala.com/images/fastfood/gallery9.jpg`,
         },
         {
-            id: Date.now(),
+            id: 11,
+            category: 4,
             title: 'Lorem ipsum',
-            src: `https://pic.re/image`,
             description: 'Lorem ipsum leo laoreet aptent',
-            category: Math.round(Math.random() * categories.length),
+            src: `https://australiangolguppaywala.com/images/fastfood/gallery10.jpg`,
+        },
+        {
+            id: 12,
+            category: 5,
+            title: 'Lorem ipsum',
+            description: 'Lorem ipsum leo laoreet aptent',
+            src: `https://australiangolguppaywala.com/images/fastfood/gallery11.jpg`,
+        },
+        {
+            id: 13,
+            category: 2,
+            title: 'Lorem ipsum',
+            description: 'Lorem ipsum leo laoreet aptent',
+            src: `https://australiangolguppaywala.com/images/fastfood/gallery12.jpg`,
+        },
+        {
+            id: 14,
+            category: 5,
+            title: 'Lorem ipsum',
+            description: 'Lorem ipsum leo laoreet aptent',
+            src: `https://australiangolguppaywala.com/images/fastfood/gallery13.jpg`,
+        },
+        {
+            id: 15,
+            category: 3,
+            title: 'Lorem ipsum',
+            description: 'Lorem ipsum leo laoreet aptent',
+            src: `https://australiangolguppaywala.com/images/fastfood/gallery14.jpg`,
         },
     ]
 
@@ -157,7 +161,7 @@ export default function Album() {
     }
 
     const onCategoryUpdate = currCategory => {
-        if (currCategory === 0) {
+        if (currCategory === categories[0]?.id) {
             setCurrImages(images)
             return
         }
