@@ -14,7 +14,7 @@ export default function JoinHero() {
             {/* Join Hero */}
             <div className="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
                 {/* Title */}
-                <span className="text-lg font-semibold text-gray-400 dark:text-gray-200 uppercase">
+                <span className="text-xl font-semibold text-gray-400 dark:text-gray-200 uppercase">
                     Join Us On
                 </span>
 
@@ -33,7 +33,7 @@ export default function JoinHero() {
                                 {/* Social Media Icon */}
                                 <Button
                                     color="inherit"
-                                    className="h-11 m-5 shadow-lg "
+                                    className="h-11 m-5 shadow-lg bg-gradient-to-tr from-pink-500 to-yellow-500"
                                 >
                                     {React.cloneElement(value?.icon, {
                                         size: 'auto',

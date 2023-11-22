@@ -1,4 +1,8 @@
-import { Card, CardBody, Image, Button, Slider } from '@nextui-org/react'
+'use client'
+
+import { useState } from 'react'
+import { Card, CardBody, Image } from '@nextui-org/react'
+import { backdropType } from '@/data/utils/backdrop-type'
 
 export default function BackgroundVideo({
     blur,
@@ -6,6 +10,8 @@ export default function BackgroundVideo({
     imageSource,
     videoSource,
 }) {
+    const [backdrop, setBackdrop] = useState(backdropType.video)
+
     return (
         <>
             <header class="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
@@ -20,37 +26,46 @@ export default function BackgroundVideo({
                     <CardBody>{children}</CardBody>
                 </Card>
 
-                <div className="md:hidden block h-full w-full object-cover">
-                    {/* For showing on low end devices only */}
-                    <Image
-                        layout="fill"
-                        src={imageSource}
-                        objectFit="contain"
-                        style={{
-                            filter: `blur(${blur}px)`,
-                            WebkitFilter: `blur(${blur}px)`,
-                        }}
-                    />
-                </div>
+                {backdrop === backdropType.image && (
+                    <div className="h-full w-full object-cover">
+                        {/* Incase: fallback backdrop */}
+                        <Image
+                            layout="fill"
+                            src={imageSource}
+                            objectFit="contain"
+                            style={{
+                                width: '100%',
+                                height: 'auto',
+                                filter: `blur(${blur}px)`,
+                                WebkitFilter: `blur(${blur}px)`,
+                            }}
+                        />
+                    </div>
+                )}
 
-                <div className="md:block hidden video h-full w-full object-cover">
-                    {/* For high end devices only */}
-                    <video
-                        muted
-                        loop="loop"
-                        playsInline
-                        autoPlay="autoplay"
-                        poster={imageSource}
-                        style={{
-                            filter: `blur(${blur}px)`,
-                            WebkitFilter: `blur(${blur}px)`,
-                        }}
-                    >
-                        <source src={videoSource} type="video/mp4" />
-                        {/* Incase: someone using browser made during stone age */}
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
+                {backdrop === backdropType.video && (
+                    <div className="video h-full w-full object-cover">
+                        {/* Incase: default backdrop */}
+                        <video
+                            muted
+                            loop="loop"
+                            playsInline
+                            autoPlay="autoplay"
+                            poster={imageSource}
+                            style={{
+                                width: '100%',
+                                height: 'auto',
+                                filter: `blur(${blur}px)`,
+                                WebkitFilter: `blur(${blur}px)`,
+                            }}
+                            onError={() => setBackdrop(backdropType.image)}
+                        >
+                            <source src={videoSource} type="video/mp4" />
+                            {/* Incase: someone using browser made during stone age */}
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                )}
             </header>
 
             <span id="video-bottom"></span>

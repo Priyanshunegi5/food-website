@@ -1,4 +1,4 @@
-import { Image } from '@nextui-org/react'
+import { Card, CardBody, CardHeader, Image } from '@nextui-org/react'
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa'
 
 export default function Reviews() {
@@ -117,49 +117,58 @@ export default function Reviews() {
                     </p>
                 </div>
 
-                <div className="grid   gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                     {reviews.map((review, index) => {
                         return (
                             <div
                                 key={`Review-${index}`}
-                                className="mb-12 md:mb-0"
+                                className="my-10 bg-slate-300/50 hover:bg-slate-300/100 dark:bg-default-100/50 hover:dark:bg-default-100/100 rounded-lg hover:scale-105"
                             >
-                                {/* Author Image */}
-                                <div className="mb-6 flex justify-center">
-                                    <Image
-                                        radius="full"
-                                        alt={review?.author}
-                                        src={review?.image?.src}
-                                        className="w-32 h-32 rounded-full shadow-lg dark:shadow-black/30"
-                                    />
+                                {/* Review Header */}
+                                <div className="flex justify-center">
+                                    {/* Author Image */}
+                                    <div className="flex justify-center -mt-[75px]">
+                                        <Image
+                                            shadow="md"
+                                            radius="full"
+                                            alt={review?.author}
+                                            src={review?.image?.src}
+                                            className="border-3 border-slate-300/50 dark:border-default-100/50 p-0 hover:p-1 w-32 h-32 rounded-full shadow-lg dark:shadow-black/30 hover:scale-110"
+                                        />
+                                    </div>
                                 </div>
 
-                                {/* Author Name */}
-                                <h5 className="mb-4 text-xl font-semibold">
-                                    {review?.author}
-                                </h5>
+                                {/* Review Body */}
+                                <div className="block h-full">
+                                    <div className="p-6">
+                                        {/* Author Name */}
+                                        <h5 className="mb-3 text-lg font-bold">
+                                            {review?.author}
+                                        </h5>
 
-                                {/* Author Position */}
-                                <h6 className="mb-4 font-semibold text-primary dark:text-primary-500">
-                                    {review?.position}
-                                </h6>
+                                        {/* Author Position */}
+                                        <h6 className="mb-1 text-sm">
+                                            {review?.position}
+                                        </h6>
 
-                                <p className="flex gap-2 mb-4 justify-center">
-                                    {/* Quote Left Icon */}
-                                    <FaQuoteLeft
-                                        size="10"
-                                        className="inline-block"
-                                    />
+                                        <p className="mb-6">
+                                            {/* Quote Left Icon */}
+                                            <FaQuoteLeft
+                                                size="10"
+                                                className="inline-block"
+                                            />
 
-                                    {/* Author Review */}
-                                    <span>{review?.message} </span>
+                                            {/* Author Review */}
+                                            <span> {review?.message} </span>
 
-                                    {/* Quote Right Icon*/}
-                                    <FaQuoteRight
-                                        size="10"
-                                        className="inline-block"
-                                    />
-                                </p>
+                                            {/* Quote Right Icon*/}
+                                            <FaQuoteRight
+                                                size="10"
+                                                className="inline-block"
+                                            />
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         )
                     })}

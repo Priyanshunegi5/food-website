@@ -9,10 +9,10 @@ export default function Hero() {
     // TODO: Fetch video from the server
     const background = {
         image: {
-            src: 'https://static.toiimg.com/photo/75831269.cms',
+            src: 'https://www.udrop.com/file/L97O/pexels-photo-9022271.jpeg',
         },
         video: {
-            src: 'https://www.udrop.com/file/L8NZ/10000000_656235423299066_8969595181737720723_n.mp4',
+            src: 'https://www.udrop.com/file/L97L/pexels-tom-leishman-9022271_(Original).mp4',
         },
     }
 
