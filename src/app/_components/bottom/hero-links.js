@@ -12,8 +12,9 @@ export default function HeroLinks() {
             <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
                 {/* Learn More */}
                 <NextLink
+                    color="inherit"
                     href={router.getRouteByName('Contact')?.path}
-                    className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-500 dark:text-white rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+                    className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
                 >
                     Learn more
                     {/* Right Arrow */}
@@ -36,7 +37,8 @@ export default function HeroLinks() {
                     <Button
                         size="lg"
                         radius="full"
-                        className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg"
+                        color="inherit"
+                        className="bg-gradient-to-tr from-pink-500 to-yellow-500 shadow-lg"
                     >
                         Get Your Nows
                     </Button>
