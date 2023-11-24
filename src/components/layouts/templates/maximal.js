@@ -5,16 +5,18 @@ import Transition from '@/components/transitions/transition'
 export default function Maximal(props) {
     return (
         <div className="relative flex flex-col">
-            {/* Header Section */}
-            <Header />
+            <div {...props}>
+                {/* Header Section */}
+                <Header />
 
-            {/* Content Section */}
-            <main>
-                <Transition>{props.children}</Transition>
-            </main>
+                {/* Content Section */}
+                <main>
+                    <Transition>{props.children}</Transition>
+                </main>
 
-            {/* Footer Section */}
-            <Footer />
+                {/* Footer Section */}
+                <Footer />
+            </div>
         </div>
     )
 }

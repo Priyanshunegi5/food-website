@@ -96,7 +96,10 @@ export default function Footer() {
                         if (links.length <= 0) return
 
                         return (
-                            <div className="" key={`FooterLinkGroup-${index}`}>
+                            <div
+                                className="p-5"
+                                key={`FooterLinkGroup-${index}`}
+                            >
                                 {/* Link Group */}
                                 <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start text-gray-900 dark:text-white">
                                     {title}

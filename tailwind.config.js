@@ -106,6 +106,7 @@ module.exports = {
                 dotted: "url('/images/patterns/dotted.png')",
                 flowers: "url('/images/patterns/flowers.png')",
                 circles: "url('/images/patterns/circles.png')",
+                lozenge: "url('/images/patterns/lozenge.png')",
                 dimension: "url('/images/patterns/dimension.png')",
                 escheresque: "url('/images/patterns/escheresque.png')",
                 crissxcross: "url('/images/patterns/crissxcross.png')",

@@ -174,7 +174,7 @@ export default function Album() {
 
     return (
         <>
-            <section className="container mx-auto max-w-7xl px-6 flex-grow">
+            <section className="bg-dotted container mx-auto max-w-7xl px-6 flex-grow pb-10">
                 {/* Gallery Categories */}
                 <Category categories={categories} onUpdate={onCategoryUpdate} />
 

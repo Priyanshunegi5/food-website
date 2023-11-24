@@ -30,10 +30,10 @@ export default function Home() {
             </>
 
             {/* Products */}
-            <>
+            <div className="pb-5">
                 <MenuShort />
                 <MenuLarge />
-            </>
+            </div>
 
             {/* References */}
             <>

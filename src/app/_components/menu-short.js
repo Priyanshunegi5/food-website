@@ -92,8 +92,8 @@ export default function MenuShort() {
     ]
 
     return (
-        <section className="">
-            <div class="py-5 px-4 mx-auto max-w-screen-md text-center lg:py-16 lg:px-12">
+        <section className="bg-lozenge py-5">
+            <div class="py-5 px-4 mx-auto max-w-screen-md text-center lg:py-10 lg:px-12">
                 {/* Menu Title */}
                 <h1 class="mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 lg:mb-6 md:text-5xl xl:text-6xl dark:text-white">
                     Our Short Menu
@@ -111,8 +111,8 @@ export default function MenuShort() {
                             <Card
                                 key={index}
                                 shadow="sm"
-                                isPressable
-                                class="w-72 border border-black dark:border-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
+                                isHoverable
+                                class="w-72 bg-white dark:bg-jet-500 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
                             >
                                 {/* Card Body */}
                                 <CardBody className="overflow-visible py-2">
@@ -131,7 +131,7 @@ export default function MenuShort() {
                                     {/* Item Details */}
                                     <div class="px-4 py-3 w-72">
                                         {/* Item Category */}
-                                        <span class="text-gray-400 mr-3 uppercase text-xs">
+                                        <span class="mr-3 uppercase text-xs">
                                             {item?.category}
                                         </span>
 

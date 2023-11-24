@@ -7,7 +7,7 @@ export default function SocialMedias() {
     const { theme } = useTheme()
 
     return (
-        <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
+        <div className="bg-dotted flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
             {/* Slogan */}
             <div className="text-[#ffbf31] mr-12 font-bold hidden lg:block">
                 <span>Get connected with us on social networks:</span>

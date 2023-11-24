@@ -113,7 +113,7 @@ export default function MenuLarge() {
     ]
 
     return (
-        <section className="m-10">
+        <section className="bg-grunge m-10 px-5 py-10">
             <div class="py-5 px-4 mx-auto max-w-screen-md text-center lg:py-16 lg:px-12">
                 {/* Menu Title */}
                 <h1 class="mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 lg:mb-6 md:text-5xl xl:text-6xl dark:text-white">
@@ -131,13 +131,13 @@ export default function MenuLarge() {
                     <div class="rounded-full h-20 w-20 bg-violet-800 animate-ping"></div>
                 </div>
             ) : (
-                <div className="gap-2 grid grid-cols-2 sm:grid-cols-4">
+                <div className="w-fit mx-auto gap-2 grid grid-cols-2 sm:grid-cols-4">
                     {Menu.map((item, index) => (
                         <Card
                             key={index}
                             shadow="sm"
                             isPressable
-                            className="md:m-5 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
+                            className="bg-white dark:bg-jet-500 md:m-5 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
                         >
                             {/* Card Header */}
                             <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
