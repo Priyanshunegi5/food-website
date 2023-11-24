@@ -5,7 +5,7 @@ import { Card, CardBody, Image } from '@nextui-org/react'
 import { backdropType } from '@/data/utils/backdrop-type'
 
 export default function BackgroundVideo({
-    blur,
+    blur = 0,
     children,
     imageSource,
     videoSource,
@@ -14,13 +14,13 @@ export default function BackgroundVideo({
 
     return (
         <>
-            <header class="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
+            <header class="relative flex items-center justify-center h-screen overflow-hidden">
                 {/* Overlay card for showing our content over background */}
                 <Card
-                    isBlurred
                     shadow="sm"
                     radius="none"
-                    className="absolute h-full w-full z-30 border-none object-cover"
+                    isBlurred={blur > 0}
+                    className="absolute bg-background/70 h-full w-full z-30 border-none object-cover"
                 >
                     {/* Overlay Content */}
                     <CardBody>{children}</CardBody>
@@ -36,8 +36,10 @@ export default function BackgroundVideo({
                             style={{
                                 width: '100%',
                                 height: 'auto',
-                                filter: `blur(${blur}px)`,
-                                WebkitFilter: `blur(${blur}px)`,
+                                ...(blur > 0 && {
+                                    filter: `blur(${blur}px)`,
+                                    WebkitFilter: `blur(${blur}px)`,
+                                }),
                             }}
                         />
                     </div>
@@ -55,8 +57,10 @@ export default function BackgroundVideo({
                             style={{
                                 width: '100%',
                                 height: 'auto',
-                                filter: `blur(${blur}px)`,
-                                WebkitFilter: `blur(${blur}px)`,
+                                ...(blur > 0 && {
+                                    filter: `blur(${blur}px)`,
+                                    WebkitFilter: `blur(${blur}px)`,
+                                }),
                             }}
                             onError={() => setBackdrop(backdropType.image)}
                         >
