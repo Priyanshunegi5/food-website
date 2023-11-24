@@ -112,7 +112,7 @@ export default function MenuShort() {
                                 key={index}
                                 shadow="sm"
                                 isPressable
-                                class="w-72 border border-black dark:border-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
+                                class="w-72 bg-jet-900 dark:bg-jet-200 border border-black dark:border-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
                             >
                                 {/* Card Body */}
                                 <CardBody className="overflow-visible py-2">
@@ -131,7 +131,7 @@ export default function MenuShort() {
                                     {/* Item Details */}
                                     <div class="px-4 py-3 w-72">
                                         {/* Item Category */}
-                                        <span class="text-gray-400 mr-3 uppercase text-xs">
+                                        <span class="mr-3 uppercase text-xs">
                                             {item?.category}
                                         </span>
 
