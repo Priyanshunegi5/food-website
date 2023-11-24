@@ -111,7 +111,7 @@ export default function MenuShort() {
                             <Card
                                 key={index}
                                 shadow="sm"
-                                isPressable
+                                isHoverable
                                 class="w-72 bg-jet-900 dark:bg-jet-200 border border-black dark:border-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
                             >
                                 {/* Card Body */}
