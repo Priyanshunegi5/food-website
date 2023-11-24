@@ -102,6 +102,7 @@ module.exports = {
                 cubes: "url('/images/patterns/cubes.png')",
                 moulin: "url('/images/patterns/moulin.png')",
                 sketch: "url('/images/patterns/sketch.png')",
+                grunge: "url('/images/patterns/grunge.png')",
             },
         },
     },
