@@ -14,7 +14,7 @@ export default function BackgroundVideo({
 
     return (
         <>
-            <header class="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
+            <header class="relative flex items-center justify-center h-screen overflow-hidden">
                 {/* Overlay card for showing our content over background */}
                 <Card
                     isBlurred
