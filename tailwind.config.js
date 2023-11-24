@@ -109,6 +109,8 @@ module.exports = {
                 dimension: "url('/images/patterns/dimension.png')",
                 escheresque: "url('/images/patterns/escheresque.png')",
                 crissxcross: "url('/images/patterns/crissxcross.png')",
+                'diagonal-striped-brick':
+                    "url('/images/patterns/diagonal-striped-brick.png')",
             },
         },
     },
