@@ -2,16 +2,12 @@ import { layouts } from '@/data/layouts/layout'
 import Minimal from '@/components/layouts/templates/minimal'
 import Maximal from '@/components/layouts/templates/maximal'
 
-export default function Layout({ type, children }) {
+export default function Layout({ type, children, ...props }) {
     switch (type) {
         case layouts.minimal:
-            // For simpler pages
-            // Like: auth
-            return <Minimal>{children}</Minimal>
+            return <Minimal {...props}>{children}</Minimal>
         case layouts.maximmal:
-            // For complex pages
-            // Like home
-            return <Maximal>{children}</Maximal>
+            return <Maximal {...props}>{children}</Maximal>
     }
 
     return <>{children}</>
