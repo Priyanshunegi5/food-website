@@ -72,27 +72,27 @@ export default function WhyUs() {
     ]
 
     return (
-        <section className="relative block px-6 py-10 md:py-20 md:px-10 border-t border-b">
-            <div class="absolute -inset-1 bg-gradient-to-r from-[#fb0404] to-[#04048c] rounded-half opacity-20 transition duration-1000 blur-lg m-[10px]"></div>
+        <section className="relative block px-6 py-10 md:py-20 md:px-10 border-t border-b bg-crissxcross">
+            <div class="absolute -inset-1 dark:bg-gradient-to-b dark:from-peach dark:to-poppy-100 rounded-half opacity-20 transition duration-1000 blur-lg m-[10px]"></div>
             <div className="relative mx-auto max-w-5xl text-center">
                 {/* Encourage */}
-                <span className="  text-[#FFBF31] my-3 flex items-center justify-center font-medium uppercase tracking-wider">
+                <span className="text-naples-yellow-300 dark:text-naples-yellow my-3 flex items-center justify-center font-medium uppercase tracking-wider">
                     Why choose us
                 </span>
 
                 {/* Slogan */}
-                <a class="border border-white-700 dark:border-gray-300 rounded-lg py-2 px-4 text-white-400 dark:text-gray-300 text-sm mb-5 transition duration-300 ease-in-out hover:text-gray-500 dark:hover:text-gray-400">
+                <a class="border border-gray-400 dark:border-gray-300 rounded-lg py-2 px-4 text-white-400 dark:text-gray-300 text-sm mb-5 transition duration-300 ease-in-out hover:text-gray-500 dark:hover:text-gray-400">
                     Forget about spending hundreds $
                 </a>
 
                 {/* Title */}
                 <h2 className="block w-full bg-gradient-to-b bg-clip-text font-bold text-3xl sm:text-4xl pt-10">
                     We Make Food, That{' '}
-                    <span className=" text-[#FFBF31]">Customers</span> Love
+                    <span className="text-red-500">Customers</span> Love
                 </h2>
 
                 {/* Description */}
-                <p className="   mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide">
+                <p className="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide">
                     Indulge in the burst of flavors with every bite of our
                     authentic Gul Guppa
                 </p>
@@ -107,10 +107,10 @@ export default function WhyUs() {
                     return (
                         <div
                             key={`WhyUsFeature-${index}`}
-                            className="rounded-md border p-8 text-center shadow"
+                            className="dark:bg-xv dark:bg-transparent bg-peach-500 bg-opacity-50 rounded-md border border-peach dark:border-peach-900 p-8 text-center shadow"
                         >
                             {/* Icon */}
-                            <div className="button-text text-red-500 mx-auto flex h-12 w-12 items-center justify-center rounded-md border">
+                            <div className="button-text text-red-500 mx-auto flex h-12 w-12 items-center justify-center rounded-md border border-peach dark:border-peach-900">
                                 {feature?.icon}
                             </div>
 

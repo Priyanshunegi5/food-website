@@ -4,12 +4,11 @@ import Transition from '@/components/transitions/transition'
 
 export default function Maximal(props) {
     return (
-        <div className="relative flex flex-col h-screen">
+        <div className="relative flex flex-col">
             {/* Header Section */}
             <Header />
 
             {/* Content Section */}
-
             <main>
                 <Transition>{props.children}</Transition>
             </main>

@@ -27,7 +27,6 @@ export default function Home() {
             {/* Highlights */}
             <>
                 <Hero />
-                <WhyUs />
             </>
 
             {/* Products */}
@@ -38,8 +37,12 @@ export default function Home() {
 
             {/* References */}
             <>
+                {/* Why Us */}
+                <WhyUs />
+
                 {/* From People */}
                 <Reviews />
+
                 {/* From Website */}
                 <BlogInfo />
             </>

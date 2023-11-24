@@ -23,7 +23,7 @@ module.exports = {
                     800: '#feead6',
                     900: '#fef4ea',
                 },
-                naples_yellow: {
+                'naples-yellow': {
                     DEFAULT: '#F7D265',
                     100: '#423203',
                     200: '#846507',
@@ -47,7 +47,7 @@ module.exports = {
                     800: '#ffe5bc',
                     900: '#fff2de',
                 },
-                sandy_brown: {
+                'sandy-brown': {
                     DEFAULT: '#F59D4C',
                     100: '#3d1f04',
                     200: '#793e07',

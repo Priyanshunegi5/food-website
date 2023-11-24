@@ -28,7 +28,7 @@ export default function Status() {
                                 className="flex flex-col items-center justify-center"
                             >
                                 {/* Status value */}
-                                <dt className="mb-2 text-3xl md:text-4xl font-extrabold">
+                                <dt className="text-poppy mb-2 text-3xl md:text-4xl font-extrabold">
                                     {status?.value}
                                 </dt>
 
