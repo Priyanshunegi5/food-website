@@ -112,7 +112,7 @@ export default function MenuShort() {
                                 key={index}
                                 shadow="sm"
                                 isHoverable
-                                class="w-72 bg-jet-900 dark:bg-jet-200 border border-black dark:border-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
+                                class="w-72 bg-white dark:bg-jet-500 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
                             >
                                 {/* Card Body */}
                                 <CardBody className="overflow-visible py-2">
