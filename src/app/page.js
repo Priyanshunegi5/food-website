@@ -30,10 +30,10 @@ export default function Home() {
             </>
 
             {/* Products */}
-            <>
+            <div className="bg-dotted pb-10">
                 <MenuShort />
                 <MenuLarge />
-            </>
+            </div>
 
             {/* References */}
             <>
