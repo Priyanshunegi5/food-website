@@ -76,7 +76,7 @@ export default function WhyUs() {
             <div class="absolute -inset-1 dark:bg-gradient-to-b dark:from-peach dark:to-poppy-100 rounded-half opacity-20 transition duration-1000 blur-lg m-[10px]"></div>
             <div className="relative mx-auto max-w-5xl text-center">
                 {/* Encourage */}
-                <span className="text-naples-yellow my-3 flex items-center justify-center font-medium uppercase tracking-wider">
+                <span className="text-naples-yellow-300 dark:text-naples-yellow my-3 flex items-center justify-center font-medium uppercase tracking-wider">
                     Why choose us
                 </span>
 
