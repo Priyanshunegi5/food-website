@@ -104,6 +104,7 @@ module.exports = {
                 sketch: "url('/images/patterns/sketch.png')",
                 grunge: "url('/images/patterns/grunge.png')",
                 dotted: "url('/images/patterns/dotted.png')",
+                flowers: "url('/images/patterns/flowers.png')",
             },
         },
     },
