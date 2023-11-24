@@ -98,6 +98,7 @@ module.exports = {
             },
             backgroundImage: {
                 xv: "url('/images/patterns/xv.png')",
+                exa: "url('/images/patterns/exa.png')",
             },
         },
     },
