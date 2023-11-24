@@ -131,7 +131,7 @@ export default function MenuLarge() {
                     <div class="rounded-full h-20 w-20 bg-violet-800 animate-ping"></div>
                 </div>
             ) : (
-                <div className="gap-2 grid grid-cols-2 sm:grid-cols-4">
+                <div className="w-fit mx-auto gap-2 grid grid-cols-2 sm:grid-cols-4">
                     {Menu.map((item, index) => (
                         <Card
                             key={index}
