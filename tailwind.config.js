@@ -11,7 +11,18 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                //
+                peach: {
+                    DEFAULT: '#FBC996',
+                    100: '#4e2803',
+                    200: '#9c5106',
+                    300: '#e97908',
+                    400: '#f8a14a',
+                    500: '#fbc996',
+                    600: '#fcd4ac',
+                    700: '#fddfc1',
+                    800: '#feead6',
+                    900: '#fef4ea',
+                },
             },
         },
     },
