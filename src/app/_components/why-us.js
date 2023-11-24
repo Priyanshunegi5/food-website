@@ -95,7 +95,7 @@ export default function WhyUs() {
                 </h2>
 
                 {/* Description */}
-                <p className="   mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide">
+                <p className="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide">
                     Indulge in the burst of flavors with every bite of our
                     authentic Gul Guppa
                 </p>
