@@ -137,7 +137,7 @@ export default function MenuLarge() {
                             key={index}
                             shadow="sm"
                             isPressable
-                            className="md:m-5 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
+                            className="bg-white dark:bg-jet-400 md:m-5 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
                         >
                             {/* Card Header */}
                             <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
