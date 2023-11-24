@@ -30,7 +30,7 @@ export default function Home() {
             </>
 
             {/* Products */}
-            <div className="bg-dotted pb-10">
+            <div className="pb-5">
                 <MenuShort />
                 <MenuLarge />
             </div>
