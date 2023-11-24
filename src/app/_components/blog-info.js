@@ -117,7 +117,10 @@ export default function BlogInfo() {
                 <div className="grid gap-8 lg:grid-cols-2">
                     {BlogInfos.map((blogInfo, index) => {
                         return (
-                            <article key={`BlogInfo-${index}`} className="p-6">
+                            <article
+                                key={`BlogInfo-${index}`}
+                                className="bg-xv p-6"
+                            >
                                 <div className="flex justify-between items-center mb-5 text-gray-500">
                                     {/* Blog Category */}
                                     <span className="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
