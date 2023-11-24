@@ -81,7 +81,7 @@ export default function WhyUs() {
                 </span>
 
                 {/* Slogan */}
-                <a class="border border-white-700 dark:border-gray-300 rounded-lg py-2 px-4 text-white-400 dark:text-gray-300 text-sm mb-5 transition duration-300 ease-in-out hover:text-gray-500 dark:hover:text-gray-400">
+                <a class="border border-gray-400 dark:border-gray-300 rounded-lg py-2 px-4 text-white-400 dark:text-gray-300 text-sm mb-5 transition duration-300 ease-in-out hover:text-gray-500 dark:hover:text-gray-400">
                     Forget about spending hundreds $
                 </a>
 
