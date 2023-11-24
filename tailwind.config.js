@@ -108,6 +108,7 @@ module.exports = {
                 circles: "url('/images/patterns/circles.png')",
                 dimension: "url('/images/patterns/dimension.png')",
                 escheresque: "url('/images/patterns/escheresque.png')",
+                crissxcross: "url('/images/patterns/crissxcross.png')",
             },
         },
     },
