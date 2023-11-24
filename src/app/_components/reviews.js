@@ -103,7 +103,7 @@ export default function Reviews() {
     ]
 
     return (
-        <section className="">
+        <section className="bg-dotted">
             <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
                 <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
                     {/* Title */}
