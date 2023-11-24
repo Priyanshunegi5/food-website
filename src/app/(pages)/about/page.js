@@ -29,8 +29,10 @@ export default function About() {
             <Hero />
 
             {/* Details */}
-            <ConceptualInformation />
-            <EmpiricalInformation />
+            <div className="bg-dotted">
+                <ConceptualInformation />
+                <EmpiricalInformation />
+            </div>
 
             {/* If User Need Help */}
             <NeedHelp />
