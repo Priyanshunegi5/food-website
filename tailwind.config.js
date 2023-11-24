@@ -97,7 +97,7 @@ module.exports = {
                 },
             },
             backgroundImage: {
-                //
+                xv: "url('/images/patterns/xv.png')",
             },
         },
     },
