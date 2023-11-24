@@ -11,9 +11,9 @@ export default function Credits() {
 
     return (
         <div className="border-t w-full p-4 text-center">
-            © {/* Copyright Year */}
-            <span>
-                {new Date().getFullYear()} - {new Date().getFullYear() + 1}
+            {/* Copyright Year */}
+            <span className="text-black dark:text-white">
+                © {new Date().getFullYear()} - {new Date().getFullYear() + 1}
             </span>
             {/* Company Name */}
             <span>
@@ -25,7 +25,9 @@ export default function Credits() {
                     {setting?.name}
                 </NextLink>
             </span>
-            . All Rights Reserved.
+            <span className="text-black dark:text-white">
+                . All Rights Reserved.
+            </span>
         </div>
     )
 }
