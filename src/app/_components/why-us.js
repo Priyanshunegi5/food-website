@@ -72,7 +72,7 @@ export default function WhyUs() {
     ]
 
     return (
-        <section className="relative block px-6 py-10 md:py-20 md:px-10 border-t border-b">
+        <section className="relative block px-6 py-10 md:py-20 md:px-10 border-t border-b bg-crissxcross">
             <div class="absolute -inset-1 bg-gradient-to-r from-[#fb0404] to-[#04048c] rounded-half opacity-20 transition duration-1000 blur-lg m-[10px]"></div>
             <div className="relative mx-auto max-w-5xl text-center">
                 {/* Encourage */}
