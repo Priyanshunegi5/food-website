@@ -88,10 +88,7 @@ export default function WhyUs() {
                 {/* Title */}
                 <h2 className="block w-full bg-gradient-to-b bg-clip-text font-bold text-3xl sm:text-4xl pt-10">
                     We Make Food, That{' '}
-                    <span className="text-cinnabar-300 dark:text-cinnabar">
-                        Customers
-                    </span>{' '}
-                    Love
+                    <span className="text-red-500">Customers</span> Love
                 </h2>
 
                 {/* Description */}
