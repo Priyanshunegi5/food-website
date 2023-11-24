@@ -99,6 +99,7 @@ module.exports = {
             backgroundImage: {
                 xv: "url('/images/patterns/xv.png')",
                 exa: "url('/images/patterns/exa.png')",
+                cubes: "url('/images/patterns/cubes.png')",
             },
         },
     },
