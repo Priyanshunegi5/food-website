@@ -1,6 +1,6 @@
 export default function NewsLetter() {
     return (
-        <div className="">
+        <div className="bg-escheresque pt-5">
             <form action="">
                 <div className="gird-cols-1 grid items-center justify-center gap-4 md:grid-cols-3">
                     {/* Title */}
