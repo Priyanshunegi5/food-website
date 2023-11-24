@@ -96,6 +96,9 @@ module.exports = {
                     900: '#d9d4d6',
                 },
             },
+            backgroundImage: {
+                //
+            },
         },
     },
     darkMode: 'class',
