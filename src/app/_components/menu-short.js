@@ -92,7 +92,7 @@ export default function MenuShort() {
     ]
 
     return (
-        <section className="bg-diagonal-striped-brick py-5">
+        <section className="bg-lozenge py-5">
             <div class="py-5 px-4 mx-auto max-w-screen-md text-center lg:py-10 lg:px-12">
                 {/* Menu Title */}
                 <h1 class="mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 lg:mb-6 md:text-5xl xl:text-6xl dark:text-white">
