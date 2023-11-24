@@ -101,6 +101,7 @@ module.exports = {
                 exa: "url('/images/patterns/exa.png')",
                 cubes: "url('/images/patterns/cubes.png')",
                 moulin: "url('/images/patterns/moulin.png')",
+                sketch: "url('/images/patterns/sketch.png')",
             },
         },
     },
