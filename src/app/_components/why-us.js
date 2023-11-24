@@ -110,7 +110,7 @@ export default function WhyUs() {
                     return (
                         <div
                             key={`WhyUsFeature-${index}`}
-                            className="rounded-md border p-8 text-center shadow"
+                            className="dark:bg-xv dark:bg-transparent bg-peach-500 bg-opacity-50 rounded-md border border-peach dark:border-peach-900 p-8 text-center shadow"
                         >
                             {/* Icon */}
                             <div className="button-text text-red-500 mx-auto flex h-12 w-12 items-center justify-center rounded-md border">
