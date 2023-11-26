@@ -28,13 +28,15 @@ export default function Hero() {
                         title={setting?.name}
                         shortTitle={setting?.shortName}
                     />
+
                     {/* Hero Description */}
                     <HeroDescription
                         slogans={setting?.slogans}
                         description={setting?.description}
                     />
+
                     {/* Hero Links */}
-                    <HeroLinks /> <JoinHero />
+                    <HeroLinks />
                 </div>
             </section>
         </BackgroundVideo>

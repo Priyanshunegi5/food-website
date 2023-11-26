@@ -6,7 +6,29 @@ body {
     min-width: 360px;
 }
 
-video {
+.video-docker video {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video-docker::after {
+    content: '';
+    top: 0;
+    left: 0;
+    z-index: 1;
     width: 100%;
-    height: auto;
+    height: 100%;
+    position: absolute;
+}
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
