@@ -1,20 +1,66 @@
 'use client'
 
 import { useState } from 'react'
-import { Card, CardBody, Image } from '@nextui-org/react'
+import { Card, CardBody } from '@nextui-org/react'
 import { backdropType } from '@/data/utils/backdrop-type'
 
-export default function BackgroundVideo({
-    blur = 0,
-    children,
-    imageSource,
-    videoSource,
-}) {
+export default function BackgroundVideo({ image, video, blur = 0, children }) {
     const [backdrop, setBackdrop] = useState(backdropType.video)
 
     return (
         <>
             <header class="relative h-screen flex flex-col items-center justify-center text-center">
+                {/* Backdrop */}
+                <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-5">
+                    {/* Background */}
+                    {backdrop === backdropType.image && (
+                        <div className="video h-full w-full object-cover">
+                            {/* Incase: fallback backdrop */}
+                            <img
+                                {...image}
+                                layout="fill"
+                                objectFit="contain"
+                                style={{
+                                    width: '100%',
+                                    height: 'auto',
+                                    ...(blur > 0 && {
+                                        filter: `blur(${blur}px)`,
+                                        WebkitFilter: `blur(${blur}px)`,
+                                    }),
+                                }}
+                                class="min-w-full min-h-full absolute object-fill"
+                            />
+                        </div>
+                    )}
+
+                    {backdrop === backdropType.video && (
+                        <div className="video-docker h-full w-full object-cover">
+                            {/* Incase: default backdrop */}
+                            <video
+                                muted
+                                loop
+                                autoPlay
+                                playsInline
+                                poster={image?.src}
+                                style={{
+                                    width: '100%',
+                                    height: 'auto',
+                                    ...(blur > 0 && {
+                                        filter: `blur(${blur}px)`,
+                                        WebkitFilter: `blur(${blur}px)`,
+                                    }),
+                                }}
+                                onError={() => setBackdrop(backdropType.image)}
+                                class="min-w-full min-h-full absolute object-cover"
+                            >
+                                <source {...video} />
+                                {/* Incase: someone using browser made during stone age */}
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    )}
+                </div>
+
                 {/* Overlay */}
                 <Card
                     shadow="sm"
@@ -27,57 +73,6 @@ export default function BackgroundVideo({
                         {children}
                     </CardBody>
                 </Card>
-
-                {/* Backdrop */}
-                <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
-                    {/* Background */}
-                    {backdrop === backdropType.image && (
-                        <div className="h-full w-full object-cover">
-                            {/* Incase: fallback backdrop */}
-                            <Image
-                                layout="fill"
-                                src={imageSource}
-                                objectFit="contain"
-                                style={{
-                                    width: '100%',
-                                    height: 'auto',
-                                    ...(blur > 0 && {
-                                        filter: `blur(${blur}px)`,
-                                        WebkitFilter: `blur(${blur}px)`,
-                                    }),
-                                }}
-                                class="min-w-full min-h-full absolute object-cover"
-                            />
-                        </div>
-                    )}
-
-                    {backdrop === backdropType.video && (
-                        <div className="video h-full w-full object-cover">
-                            {/* Incase: default backdrop */}
-                            <video
-                                muted
-                                loop
-                                autoPlay
-                                playsInline
-                                poster={imageSource}
-                                style={{
-                                    width: '100%',
-                                    height: 'auto',
-                                    ...(blur > 0 && {
-                                        filter: `blur(${blur}px)`,
-                                        WebkitFilter: `blur(${blur}px)`,
-                                    }),
-                                }}
-                                onError={() => setBackdrop(backdropType.image)}
-                                class="min-w-full min-h-full absolute object-cover"
-                            >
-                                <source src={videoSource} type="video/mp4" />
-                                {/* Incase: someone using browser made during stone age */}
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                    )}
-                </div>
             </header>
         </>
     )
