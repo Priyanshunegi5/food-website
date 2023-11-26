@@ -8,7 +8,7 @@ export default function Maximal(props) {
         <div className="relative flex flex-col">
             <Preloader
                 opacity={80}
-                delay="1500"
+                delay="5000"
                 image={{
                     width: 100,
                     height: 100,
