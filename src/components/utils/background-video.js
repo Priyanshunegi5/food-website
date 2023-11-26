@@ -71,8 +71,6 @@ export default function BackgroundVideo({
                     </div>
                 )}
             </header>
-
-            <span id="video-bottom"></span>
         </>
     )
 }
