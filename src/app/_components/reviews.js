@@ -103,7 +103,7 @@ export default function Reviews() {
     ]
 
     return (
-        <section className="bg-dotted">
+        <section className="bg-stone-200 dark:bg-stone-950 m-10 rounded-2xl">
             <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
                 <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
                     {/* Title */}
@@ -122,7 +122,7 @@ export default function Reviews() {
                         return (
                             <div
                                 key={`Review-${index}`}
-                                className="my-10 bg-slate-300/50 hover:bg-slate-300/100 dark:bg-default-100/50 hover:dark:bg-default-100/100 rounded-lg hover:scale-105"
+                                className="my-10 bg-stone-300 hover:bg-stone-400 dark:bg-stone-700 hover:dark:bg-stone-900 rounded-lg hover:scale-105"
                             >
                                 {/* Review Header */}
                                 <div className="flex justify-center">

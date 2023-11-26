@@ -113,7 +113,7 @@ export default function MenuLarge() {
     ]
 
     return (
-        <section className="bg-grunge m-10 px-5 py-10">
+        <section className="bg-zinc-300 dark:bg-zinc-800 m-10 px-5 py-10 rounded-3xl">
             <div class="py-5 px-4 mx-auto max-w-screen-md text-center lg:py-16 lg:px-12">
                 {/* Menu Title */}
                 <h1 class="mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 lg:mb-6 md:text-5xl xl:text-6xl dark:text-white">
@@ -158,7 +158,7 @@ export default function MenuLarge() {
                                     src={item?.image?.src}
                                     width={item?.image?.width}
                                     height={item?.image?.height}
-                                    className="w-full object-cover h-[140px]"
+                                    className="w-full object-cover h-[100px] sm:h-[70px] md:h-[140px]"
                                 />
                             </CardBody>
 

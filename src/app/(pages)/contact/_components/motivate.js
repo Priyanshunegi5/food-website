@@ -2,7 +2,7 @@ import { Image } from '@nextui-org/react'
 
 export default function Motivate() {
     return (
-        <section className="bg-dotted">
+        <section className="bg-zinc-200 dark:bg-zinc-950">
             <div className="min-h-screen flex flex-col p-8 sm:p-16 md:p-24 justify-center">
                 <div data-theme="teal" className="mx-auto max-w-6xl">
                     {/* Title */}

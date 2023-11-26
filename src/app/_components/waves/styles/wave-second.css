@@ -1,0 +1,17 @@
+.wave-second {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-second svg {
+    position: relative;
+    display: block;
+    width: calc(280% + 1.3px);
+    height: 500px;
+}
+
+.wave-second .shape-fill {
+    fill: #030303;
+}

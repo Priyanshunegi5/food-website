@@ -29,7 +29,7 @@ export default function About() {
             <Hero />
 
             {/* Details */}
-            <div className="bg-dotted">
+            <div className="bg-zinc-200 dark:bg-zinc-950">
                 <ConceptualInformation />
                 <EmpiricalInformation />
             </div>

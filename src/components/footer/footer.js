@@ -82,7 +82,7 @@ export default function Footer() {
     ]
 
     return (
-        <footer className="border-t text-neutral-600 dark:text-neutral-200 lg:text-left">
+        <footer className="text-neutral-600 dark:text-neutral-200 lg:text-left">
             <SocialMedias />
 
             <div className="mx-6 py-10 text-center md:text-left">
@@ -128,7 +128,6 @@ export default function Footer() {
                 </div>
             </div>
 
-            <NewsLetter />
             <Credits />
         </footer>
     )
