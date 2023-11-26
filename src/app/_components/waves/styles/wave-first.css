@@ -1,0 +1,20 @@
+.wave-first {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-first svg {
+    position: relative;
+    display: block;
+    width: calc(273% + 1.3px);
+    height: 200px;
+}
+
+.wave-first .shape-fill {
+    fill: #030303;
+}
