@@ -67,9 +67,9 @@ export default function ThemeSwitch({ className, classNames }) {
                 })}
             >
                 {!isSelected || isSSR ? (
-                    <MoonIcon size={22} />
-                ) : (
                     <SunIcon size={22} />
+                ) : (
+                    <MoonIcon size={22} />
                 )}
             </div>
         </Component>
