@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 
 export default function Preloader({
     children,
+    delay = 1000,
     title = null,
     image = null,
     description = null,
@@ -12,7 +13,7 @@ export default function Preloader({
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        setTimeout(() => setLoading(false), 1500)
+        setTimeout(() => setLoading(false), delay)
     }, [])
 
     if (!loading) {
