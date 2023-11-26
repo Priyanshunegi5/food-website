@@ -10,6 +10,8 @@ import Layout from '@/components/layouts/layout'
 import BlogInfo from '@/app/_components/blog-info'
 import MenuShort from '@/app/_components/menu-short'
 import MenuLarge from '@/app/_components/menu-large'
+import WaveFirst from '@/app/_components/waves/wave-first'
+import WaveSecond from '@/app/_components/waves/wave-second'
 
 export const metadata = {}
 
@@ -25,12 +27,16 @@ export default function Home() {
     return (
         <Layout type={layouts.maximmal}>
             {/* Highlights */}
-            <>
+            <div className="relative">
                 <Hero />
-            </>
+
+                {/* Backdrop waves */}
+                <WaveFirst />
+                <WaveSecond />
+            </div>
 
             {/* Products */}
-            <div className="pb-5">
+            <div className="relative bg-zinc-200 dark:bg-zinc-950 pb-5 z-20">
                 <MenuShort />
                 <MenuLarge />
             </div>
