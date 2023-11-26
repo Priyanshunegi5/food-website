@@ -158,7 +158,7 @@ export default function MenuLarge() {
                                     src={item?.image?.src}
                                     width={item?.image?.width}
                                     height={item?.image?.height}
-                                    className="w-full object-cover h-[140px]"
+                                    className="w-full object-cover h-[100px] sm:h-[70px] md:h-[140px]"
                                 />
                             </CardBody>
 
