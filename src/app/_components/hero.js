@@ -14,7 +14,7 @@ export default function Hero() {
         },
         video: {
             type: 'video/mp4',
-            src: 'images/hero/golguppaywala-video.mp4',
+            src: 'videos/hero/golguppaywala-video.mp4',
         },
     }
 
