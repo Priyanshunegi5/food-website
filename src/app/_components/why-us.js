@@ -72,8 +72,8 @@ export default function WhyUs() {
     ]
 
     return (
-        <section className="relative block px-6 py-10 md:py-20 md:px-10 border-t border-b bg-crissxcross">
-            <div class="absolute -inset-1 dark:bg-gradient-to-b dark:from-peach dark:to-poppy-100 rounded-half opacity-20 transition duration-1000 blur-lg m-[10px]"></div>
+        <section className="relative block px-6 py-10 md:py-20 md:px-10 bg-crissxcross">
+            <div class="absolute -inset-1 bg-neutral-200 dark:bg-neutral-900 rounded-half opacity-20 transition duration-1000 blur-lg m-[10px]"></div>
             <div className="relative mx-auto max-w-5xl text-center">
                 {/* Encourage */}
                 <span className="text-naples-yellow-300 dark:text-naples-yellow my-3 flex items-center justify-center font-medium uppercase tracking-wider">
@@ -107,7 +107,7 @@ export default function WhyUs() {
                     return (
                         <div
                             key={`WhyUsFeature-${index}`}
-                            className="dark:bg-xv dark:bg-transparent bg-peach-500 bg-opacity-50 rounded-md border border-peach dark:border-peach-900 p-8 text-center shadow"
+                            className="dark:bg-xv bg-neutral-200 dark:bg-neutral-800 rounded-md border p-8 text-center shadow"
                         >
                             {/* Icon */}
                             <div className="button-text text-red-500 mx-auto flex h-12 w-12 items-center justify-center rounded-md border border-peach dark:border-peach-900">
@@ -126,7 +126,7 @@ export default function WhyUs() {
                 })}
             </div>
 
-            <div className="absolute bottom-0 left-0 z-0 h-1/3 w-full border-b"></div>
+            <div className="absolute bottom-0 left-0 z-0 h-1/3 w-full"></div>
             <div className="absolute bottom-0 right-0 z-0 h-1/3 w-full"></div>
         </section>
     )
