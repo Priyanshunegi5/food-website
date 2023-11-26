@@ -2,7 +2,7 @@ import { setting } from '@/data/setting'
 import JoinHero from '@/app/_components/join-hero'
 import Herotitle from '@/app/_components/top/hero-title'
 import HeroLinks from '@/app/_components/bottom/hero-links'
-import BackgroundVideo from '@/components/utils/background-video'
+import Backdrop from '@/components/utils/backdrop'
 import HeroDescription from '@/app/_components/middle/hero-description'
 
 export default function Hero() {
@@ -19,7 +19,7 @@ export default function Hero() {
     }
 
     return (
-        <BackgroundVideo image={background?.image} video={background?.video}>
+        <Backdrop image={background?.image} video={background?.video}>
             <section className="lg:pt-10 pt-10">
                 <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
                     {/* Hero Title */}
@@ -38,6 +38,6 @@ export default function Hero() {
                     <HeroLinks />
                 </div>
             </section>
-        </BackgroundVideo>
+        </Backdrop>
     )
 }
