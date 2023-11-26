@@ -1,5 +1,7 @@
 'use client'
 
+import '@/components/utils/styles/backdrop.css'
+
 import { useState } from 'react'
 import { Card, CardBody } from '@nextui-org/react'
 import { backdropType } from '@/data/utils/backdrop-type'
