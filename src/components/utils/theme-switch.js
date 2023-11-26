@@ -69,7 +69,7 @@ export default function ThemeSwitch({ className, classNames }) {
                 {!isSelected || isSSR ? (
                     <SunIcon className="text-xanthous-500" size={22} />
                 ) : (
-                    <MoonIcon className="text-jet-500" size={22} />
+                    <MoonIcon className="text-blue-700" size={22} />
                 )}
             </div>
         </Component>
