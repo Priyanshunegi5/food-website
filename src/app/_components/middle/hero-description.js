@@ -13,7 +13,7 @@ export default function HeroDescription({ slogans, description }) {
     return (
         <>
             {/* Hero Description */}
-            <p className="mb-8 text-lg font-normal text-gray-700 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-100">
+            <p className="mb-8 text-base font-normal text-gray-700 md:text-lg lg:text-xl sm:px-16 xl:px-48 dark:text-gray-100">
                 {hydrated && (
                     <AnimatedText
                         text={
