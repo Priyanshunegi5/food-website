@@ -1,3 +1,4 @@
+import NextLink from 'next/link'
 import { web } from '@/config/router/web'
 import { Image } from '@nextui-org/react'
 import useRouter from '@/hooks/useRouter'
@@ -82,7 +83,7 @@ export default function Recommendation() {
                                 className="w-full md:w-1/3 px-2 pb-12"
                             >
                                 <div className="h-full bg-xv rounded overflow-hidden shadow-md hover:shadow-lg relative smooth hover:scale-105">
-                                    <a
+                                    <NextLink
                                         href={route.applyParameter('Blog', {
                                             slug: recommendation?.blog?.slug,
                                         })}
@@ -138,7 +139,7 @@ export default function Recommendation() {
                                                 }
                                             </p>
                                         </div>
-                                    </a>
+                                    </NextLink>
                                 </div>
                             </div>
                         )
