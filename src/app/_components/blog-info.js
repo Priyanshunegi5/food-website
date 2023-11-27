@@ -1,11 +1,19 @@
+'use client'
+
 import NextLink from 'next/link'
 import { web } from '@/config/router/web'
 import useRouter from '@/hooks/useRouter'
 import { Image } from '@nextui-org/react'
+import { useState, useLayoutEffect } from 'react'
 import ArrowRightIcon from '@/components/icons/arrow-right-icon'
 
 export default function BlogInfo() {
+    const [hydrated, setHydrated] = useState(false)
     const router = useRouter({ version: 'v1', ...web })
+
+    useLayoutEffect(() => {
+        setHydrated(true)
+    }, [hydrated])
 
     // TODO: Fetch blog info from server
     const BlogInfos = [
@@ -119,72 +127,80 @@ export default function BlogInfo() {
 
                 {/* Blog Links */}
                 <div className="grid gap-8 lg:grid-cols-2">
-                    {BlogInfos.map((blogInfo, index) => {
-                        return (
-                            <NextLink
-                                key={`BlogInfo-${index}`}
-                                href={router.applyParameter('Blog', {
-                                    slug: blogInfo?.blog?.slug,
-                                })}
-                            >
-                                <article className="bg-xv p-6 hover:scale-105">
-                                    <div className="flex justify-between items-center mb-5 text-gray-500">
-                                        {/* Blog Category */}
-                                        <span className="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
-                                            {blogInfo?.blog?.category}
-                                        </span>
+                    {!hydrated ? (
+                        <div class="flex justify-center items-center h-screen">
+                            <div class="rounded-full h-20 w-20 bg-violet-800 animate-ping"></div>
+                        </div>
+                    ) : (
+                        BlogInfos.map((blogInfo, index) => {
+                            return (
+                                <NextLink
+                                    key={`BlogInfo-${index}`}
+                                    href={router.applyParameter('Blog', {
+                                        slug: blogInfo?.blog?.slug,
+                                    })}
+                                >
+                                    <article className="bg-xv p-6 hover:scale-105">
+                                        <div className="flex justify-between items-center mb-5 text-gray-500">
+                                            {/* Blog Category */}
+                                            <span className="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                                                {blogInfo?.blog?.category}
+                                            </span>
 
-                                        {/* Blog Created At */}
-                                        <span className="text-sm">
-                                            {blogInfo?.blog?.createdAt}
-                                        </span>
-                                    </div>
-
-                                    {/* Blog Title */}
-                                    <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                        <a href="#">{blogInfo?.blog?.title}</a>
-                                    </h2>
-
-                                    {/* Blog Summary */}
-                                    <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
-                                        {blogInfo?.blog?.summary}
-                                    </p>
-
-                                    <div className="flex justify-between items-center">
-                                        <div className="flex items-center space-x-4">
-                                            {/* Blog Author Image */}
-                                            <Image
-                                                alt={blogInfo?.author?.name}
-                                                className="w-7 h-7 rounded-full"
-                                                src={
-                                                    blogInfo?.author?.avatar
-                                                        ?.src
-                                                }
-                                            />
-
-                                            {/* Blog Author Name */}
-                                            <span className="font-medium dark:text-white">
-                                                {blogInfo?.author?.name}
+                                            {/* Blog Created At */}
+                                            <span className="text-sm">
+                                                {blogInfo?.blog?.createdAt}
                                             </span>
                                         </div>
 
-                                        {/* Blog Article Link */}
-                                        <NextLink
-                                            href={blogInfo?.blog?.slug}
-                                            className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
-                                        >
-                                            Read more
-                                            <ArrowRightIcon
-                                                fill="currentColor"
-                                                viewBox="0 0 20 20"
-                                                className="ml-2 w-4 h-4"
-                                            />
-                                        </NextLink>
-                                    </div>
-                                </article>
-                            </NextLink>
-                        )
-                    })}
+                                        {/* Blog Title */}
+                                        <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                            <a href="#">
+                                                {blogInfo?.blog?.title}
+                                            </a>
+                                        </h2>
+
+                                        {/* Blog Summary */}
+                                        <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
+                                            {blogInfo?.blog?.summary}
+                                        </p>
+
+                                        <div className="flex justify-between items-center">
+                                            <div className="flex items-center space-x-4">
+                                                {/* Blog Author Image */}
+                                                <Image
+                                                    alt={blogInfo?.author?.name}
+                                                    className="w-7 h-7 rounded-full"
+                                                    src={
+                                                        blogInfo?.author?.avatar
+                                                            ?.src
+                                                    }
+                                                />
+
+                                                {/* Blog Author Name */}
+                                                <span className="font-medium dark:text-white">
+                                                    {blogInfo?.author?.name}
+                                                </span>
+                                            </div>
+
+                                            {/* Blog Article Link */}
+                                            <NextLink
+                                                href={blogInfo?.blog?.slug}
+                                                className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
+                                            >
+                                                Read more
+                                                <ArrowRightIcon
+                                                    fill="currentColor"
+                                                    viewBox="0 0 20 20"
+                                                    className="ml-2 w-4 h-4"
+                                                />
+                                            </NextLink>
+                                        </div>
+                                    </article>
+                                </NextLink>
+                            )
+                        })
+                    )}
                 </div>
             </div>
         </section>
