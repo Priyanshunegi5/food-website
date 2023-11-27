@@ -48,5 +48,30 @@ export default function useRouter({ pathname, version, web }) {
         )
     }
 
-    return { getRoutes, isActiveRoutePath, getRouteByPath, getRouteByName }
+    /**
+     * Apply parameters to the dynamic route.
+     *
+     * @param {string} name
+     * @param {object} params
+     * @return object|null
+     */
+    const applyParameter = (name, params) => {
+        let path = getRouteByName(name)?.path
+
+        if (!path) return null
+
+        map(params, (value, param) => {
+            path = path.replace(`[${param}]`, value)
+        })
+
+        return path
+    }
+
+    return {
+        getRoutes,
+        isActiveRoutePath,
+        getRouteByPath,
+        getRouteByName,
+        applyParameter,
+    }
 }
