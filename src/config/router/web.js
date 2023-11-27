@@ -18,6 +18,12 @@ export const web = {
                 transition: effect.fade,
                 layout: layouts.maximmal,
             },
+            Blog: {
+                name: 'Blog',
+                path: '/blog/[slug]',
+                transition: effect.fade,
+                layout: layouts.maximmal,
+            },
             Gallery: {
                 name: 'Gallery',
                 path: '/gallery',
