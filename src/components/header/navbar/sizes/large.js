@@ -31,6 +31,8 @@ export default function Large({ router }) {
                 {/* Navbar Menu */}
                 <ul className="hidden lg:flex gap-4 justify-start ml-2">
                     {router.getRoutes()?.map((route, index) => {
+                        if (route?.dynamic) return
+
                         const isActive = router.isActiveRoutePath(route.path)
 
                         return (
