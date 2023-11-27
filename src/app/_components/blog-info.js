@@ -1,15 +1,19 @@
+import NextLink from 'next/link'
+import { web } from '@/config/router/web'
+import useRouter from '@/hooks/useRouter'
 import { Image } from '@nextui-org/react'
 import ArrowRightIcon from '@/components/icons/arrow-right-icon'
-import NextLink from 'next/link'
 
 export default function BlogInfo() {
+    const router = useRouter({ version: 'v1', ...web })
+
     // TODO: Fetch blog info from server
     const BlogInfos = [
         {
             blog: {
                 category: 'Origin',
                 createdAt: '14 days ago',
-                slug: 'Origin',
+                slug: 'origin',
                 title: 'Origin',
                 summary: ` Golgappa is a popular Indian street food that originated in the Northern parts of India but is now relished across the country, known by different names like Pani Puri, Puchka, or Gupchup in various regions`,
             },
@@ -24,7 +28,7 @@ export default function BlogInfo() {
             blog: {
                 category: 'Flavor',
                 createdAt: '4 days ago',
-                slug: 'Flavored Water (Pani)',
+                slug: 'flavored-water-pani',
                 title: 'Flavored Water (Pani)',
                 summary: ` There's a range of flavored water options like tangy tamarind (Imli), spicy mint (Pudina), tangy-sweet (Imli), cumin (Jeera), and more, each adding a unique taste to the overall experience `,
             },
@@ -39,7 +43,7 @@ export default function BlogInfo() {
             blog: {
                 category: 'Variations ',
                 createdAt: '6 days ago',
-                slug: 'Variations ',
+                slug: 'variations ',
                 title: 'Variations ',
                 summary: `There are numerous innovative variations in the fillings and flavored water. Some modern versions include chocolate-filled puris, avocado, vodka-infused pani, and various fruit juices [2][4][6].`,
             },
@@ -69,7 +73,7 @@ export default function BlogInfo() {
             blog: {
                 category: 'Ingredients',
                 createdAt: '7 days ago',
-                slug: 'Ingredients and Preparation',
+                slug: 'ingredients-and-preparation',
                 title: 'Ingredients and Preparation',
                 summary: ` This snack typically consists of small, hollow, crispy puris filled with a mixture of flavored water (pani), tamarind chutney, spicy mashed potatoes or chickpeas, onions, and spices. The puris are made from a dough of semolina (sooji), flour (maida), baking soda, and salt, deep-fried until crispy`,
             },
@@ -84,7 +88,7 @@ export default function BlogInfo() {
             blog: {
                 category: 'Popularity',
                 createdAt: '3 days ago',
-                slug: 'Popularity',
+                slug: 'popularity',
                 title: 'Popularity',
                 summary: ` Golgappa remains a favorite street snack, appreciated for its burst of flavors and the joy of customization, allowing each person to tailor the taste to their preference.`,
             },
@@ -117,61 +121,68 @@ export default function BlogInfo() {
                 <div className="grid gap-8 lg:grid-cols-2">
                     {BlogInfos.map((blogInfo, index) => {
                         return (
-                            <article
+                            <NextLink
                                 key={`BlogInfo-${index}`}
-                                className="bg-xv p-6"
+                                href={router.applyParameter('Blog', {
+                                    slug: blogInfo?.blog?.slug,
+                                })}
                             >
-                                <div className="flex justify-between items-center mb-5 text-gray-500">
-                                    {/* Blog Category */}
-                                    <span className="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
-                                        {blogInfo?.blog?.category}
-                                    </span>
+                                <article className="bg-xv p-6 hover:scale-105">
+                                    <div className="flex justify-between items-center mb-5 text-gray-500">
+                                        {/* Blog Category */}
+                                        <span className="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                                            {blogInfo?.blog?.category}
+                                        </span>
 
-                                    {/* Blog Created At */}
-                                    <span className="text-sm">
-                                        {blogInfo?.blog?.createdAt}
-                                    </span>
-                                </div>
-
-                                {/* Blog Title */}
-                                <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                    <a href="#">{blogInfo?.blog?.title}</a>
-                                </h2>
-
-                                {/* Blog Summary */}
-                                <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
-                                    {blogInfo?.blog?.summary}
-                                </p>
-
-                                <div className="flex justify-between items-center">
-                                    <div className="flex items-center space-x-4">
-                                        {/* Blog Author Image */}
-                                        <Image
-                                            alt={blogInfo?.author?.name}
-                                            className="w-7 h-7 rounded-full"
-                                            src={blogInfo?.author?.avatar?.src}
-                                        />
-
-                                        {/* Blog Author Name */}
-                                        <span className="font-medium dark:text-white">
-                                            {blogInfo?.author?.name}
+                                        {/* Blog Created At */}
+                                        <span className="text-sm">
+                                            {blogInfo?.blog?.createdAt}
                                         </span>
                                     </div>
 
-                                    {/* Blog Article Link */}
-                                    <NextLink
-                                        href={blogInfo?.blog?.slug}
-                                        className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
-                                    >
-                                        Read more
-                                        <ArrowRightIcon
-                                            fill="currentColor"
-                                            viewBox="0 0 20 20"
-                                            className="ml-2 w-4 h-4"
-                                        />
-                                    </NextLink>
-                                </div>
-                            </article>
+                                    {/* Blog Title */}
+                                    <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        <a href="#">{blogInfo?.blog?.title}</a>
+                                    </h2>
+
+                                    {/* Blog Summary */}
+                                    <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
+                                        {blogInfo?.blog?.summary}
+                                    </p>
+
+                                    <div className="flex justify-between items-center">
+                                        <div className="flex items-center space-x-4">
+                                            {/* Blog Author Image */}
+                                            <Image
+                                                alt={blogInfo?.author?.name}
+                                                className="w-7 h-7 rounded-full"
+                                                src={
+                                                    blogInfo?.author?.avatar
+                                                        ?.src
+                                                }
+                                            />
+
+                                            {/* Blog Author Name */}
+                                            <span className="font-medium dark:text-white">
+                                                {blogInfo?.author?.name}
+                                            </span>
+                                        </div>
+
+                                        {/* Blog Article Link */}
+                                        <NextLink
+                                            href={blogInfo?.blog?.slug}
+                                            className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
+                                        >
+                                            Read more
+                                            <ArrowRightIcon
+                                                fill="currentColor"
+                                                viewBox="0 0 20 20"
+                                                className="ml-2 w-4 h-4"
+                                            />
+                                        </NextLink>
+                                    </div>
+                                </article>
+                            </NextLink>
                         )
                     })}
                 </div>
