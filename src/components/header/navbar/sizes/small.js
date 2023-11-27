@@ -26,6 +26,8 @@ export default function Small({ router }) {
                 {/* Navbar Menu */}
                 <div className="mx-4 mt-2 flex flex-col gap-2">
                     {router.getRoutes()?.map((route, index) => {
+                        if (route?.dynamic) return
+
                         const isActive = router.isActiveRoutePath(route.path)
 
                         return (
