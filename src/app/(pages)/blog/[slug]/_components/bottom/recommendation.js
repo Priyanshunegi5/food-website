@@ -4,7 +4,7 @@ import useRouter from '@/hooks/useRouter'
 import { ScrollShadow } from '@nextui-org/react'
 
 export default function Recommendation() {
-    const route = useRouter(web)
+    const route = useRouter({ version: 'v1', ...web })
 
     // TODO: Fetch recommendations from server
     const Recommendations = [
