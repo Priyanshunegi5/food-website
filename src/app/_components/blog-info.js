@@ -4,6 +4,7 @@ import NextLink from 'next/link'
 import { web } from '@/config/router/web'
 import useRouter from '@/hooks/useRouter'
 import { Image } from '@nextui-org/react'
+import { ScrollShadow } from '@nextui-org/react'
 import { useState, useLayoutEffect } from 'react'
 import ArrowRightIcon from '@/components/icons/arrow-right-icon'
 
@@ -161,9 +162,11 @@ export default function BlogInfo() {
                                         </h2>
 
                                         {/* Blog Summary */}
-                                        <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
-                                            {blogInfo?.blog?.summary}
-                                        </p>
+                                        <ScrollShadow className="text-gray-500 font-serif text-base mb-5 h-32 pb-5 scrollbar-hide">
+                                            <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
+                                                {blogInfo?.blog?.summary}
+                                            </p>
+                                        </ScrollShadow>
 
                                         <div className="flex justify-between items-center">
                                             <div className="flex items-center space-x-4">

@@ -1,13 +1,9 @@
 'use client'
 
-import {
-    Card,
-    CardHeader,
-    CardBody,
-    CardFooter,
-    Image,
-    Button,
-} from '@nextui-org/react'
+import '@/app/_components/styles/menu-short.css'
+
+import { Card, Image, CardBody } from '@nextui-org/react'
+
 import { useState, useLayoutEffect } from 'react'
 import AddToCartIcon from '@/components/icons/add-to-cart-icon'
 
@@ -112,10 +108,10 @@ export default function MenuShort() {
                                 key={index}
                                 shadow="sm"
                                 isHoverable
-                                class="w-72 bg-white dark:bg-jet-500 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
+                                class="short-card w-72 shadow-md duration-500 hover:scale-105 hover:shadow-xl"
                             >
                                 {/* Card Body */}
-                                <CardBody className="overflow-visible py-2">
+                                <CardBody className="card-body bg-white dark:bg-jet-500 overflow-visible py-2 rounded-xl">
                                     {/* Item Image */}
                                     <Image
                                         shadow="sm"
@@ -136,9 +132,9 @@ export default function MenuShort() {
                                         </span>
 
                                         {/* Title */}
-                                        {/* <p class="text-lg font-bold truncate block capitalize">
+                                        <p class="text-lg font-bold truncate block capitalize">
                                             <b>{item.title}</b>
-                                        </p> */}
+                                        </p>
 
                                         {/* Price */}
                                         <div class="flex items-center">

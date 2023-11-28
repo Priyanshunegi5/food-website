@@ -58,9 +58,7 @@ export default function Awards() {
                     <a href="#" target="_blank">
                         <h2 className="mt-4 font-dm-sans text-mobile-h3 font-semibold leading-snug sm:text-mobile-h2 md:text-desktop-h2">
                             An
-                            <span className="font-bold underline underline-offset-2">
-                                absolute 5/5
-                            </span>{' '}
+                            <span className="font-bold"> absolute 5/5 </span>
                             rating
                         </h2>
                     </a>

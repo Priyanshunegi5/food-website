@@ -10,6 +10,7 @@ import Layout from '@/components/layouts/layout'
 import BlogInfo from '@/app/_components/blog-info'
 import MenuShort from '@/app/_components/menu-short'
 import MenuLarge from '@/app/_components/menu-large'
+import CommingSoon from '@/app/_components/comming-soon'
 import WaveFirst from '@/app/_components/waves/wave-first'
 import WaveSecond from '@/app/_components/waves/wave-second'
 
@@ -37,6 +38,10 @@ export default function Home() {
 
             {/* Products */}
             <div className="relative bg-zinc-200 dark:bg-zinc-950 pb-5 z-20">
+                {/* Comming Soon */}
+                <CommingSoon />
+
+                {/* Waves */}
                 <MenuShort />
                 <MenuLarge />
             </div>
