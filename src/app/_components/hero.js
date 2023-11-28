@@ -4,6 +4,7 @@ import Herotitle from '@/app/_components/top/hero-title'
 import HeroLinks from '@/app/_components/bottom/hero-links'
 import Backdrop from '@/components/utils/backdrop'
 import HeroDescription from '@/app/_components/middle/hero-description'
+import CommingSoon from './comming-soon/comming-soon'
 
 export default function Hero() {
     // TODO: Fetch video from the server
@@ -36,6 +37,7 @@ export default function Hero() {
 
                     {/* Hero Links */}
                     <HeroLinks />
+                    <CommingSoon />
                 </div>
             </section>
         </Backdrop>

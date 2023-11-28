@@ -10,8 +10,8 @@ export default function NeedHelp() {
 
                     {/* Description */}
                     <p className="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">
-                        "Neque porro quisquam est qui dolorem ipsum quia dolor
-                        sit amet, consectetur, adipisci velit..."
+                        "Unleash the burst of flavors with every bite of our Gol
+                        Guppa! Taste buds on an adventure!"
                     </p>
 
                     {/* Link */}
