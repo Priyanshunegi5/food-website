@@ -1,0 +1,18 @@
+.large-card {
+    border-radius: 20px;
+    transition: all 0.3s;
+    background-image: linear-gradient(163deg, #c01d25 0%, #fea414 100%);
+}
+
+.large-card > .card-body {
+    transition: all 0.2s;
+}
+
+.large-card > .card-body:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.large-card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(255, 183, 0, 0.3);
+}
