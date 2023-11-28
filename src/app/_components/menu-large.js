@@ -1,5 +1,7 @@
 'use client'
 
+import '@/app/_components/styles/menu-large.css'
+
 import {
     Card,
     Image,
@@ -113,7 +115,7 @@ export default function MenuLarge() {
     ]
 
     return (
-        <section className="bg-zinc-300 dark:bg-zinc-800 m-10 px-5 py-10 rounded-3xl">
+        <section className="bg-zinc-300 dark:bg-zinc-800 m-5 px-5 py-10 rounded-3xl">
             <div class="py-5 px-4 mx-auto max-w-screen-md text-center lg:py-16 lg:px-12">
                 {/* Menu Title */}
                 <h1 class="mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 lg:mb-6 md:text-5xl xl:text-6xl dark:text-white">
@@ -137,39 +139,41 @@ export default function MenuLarge() {
                             key={index}
                             shadow="sm"
                             isPressable
-                            className="bg-white dark:bg-jet-500 md:m-5 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
+                            className="large-card md:m-5 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl mt-10"
                         >
-                            {/* Card Header */}
-                            <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-                                {/* Item Category */}
-                                <p className="text-tiny uppercase font-bold">
-                                    {item?.category}
-                                </p>
-                            </CardHeader>
+                            <div className="card-body bg-white dark:bg-jet-500">
+                                {/* Card Header */}
+                                <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+                                    {/* Item Category */}
+                                    <p className="text-tiny uppercase font-bold">
+                                        {item?.category}
+                                    </p>
+                                </CardHeader>
 
-                            {/* Card Body */}
-                            <CardBody className="overflow-visible py-2">
-                                {/* Item Image */}
-                                <Image
-                                    shadow="sm"
-                                    radius="lg"
-                                    alt={item?.title}
-                                    title={item?.title}
-                                    src={item?.image?.src}
-                                    width={item?.image?.width}
-                                    height={item?.image?.height}
-                                    className="w-full object-cover h-[100px] sm:h-[70px] md:h-[140px]"
-                                />
-                            </CardBody>
+                                {/* Card Body */}
+                                <CardBody className="overflow-visible py-2">
+                                    {/* Item Image */}
+                                    <Image
+                                        shadow="sm"
+                                        radius="lg"
+                                        alt={item?.title}
+                                        title={item?.title}
+                                        src={item?.image?.src}
+                                        width={item?.image?.width}
+                                        height={item?.image?.height}
+                                        className="w-full object-cover h-[100px] sm:h-[70px] md:h-[140px]"
+                                    />
+                                </CardBody>
 
-                            {/* Card Footer */}
-                            <CardFooter className="text-small justify-between">
-                                {/* Title */}
-                                <b>{item.title}</b>
+                                {/* Card Footer */}
+                                <CardFooter className="text-small justify-between">
+                                    {/* Title */}
+                                    <b>{item.title}</b>
 
-                                {/* Price
+                                    {/* Price
                                 <p className="text-default-500">{item.price}</p> */}
-                            </CardFooter>
+                                </CardFooter>
+                            </div>
                         </Card>
                     ))}
                 </div>
