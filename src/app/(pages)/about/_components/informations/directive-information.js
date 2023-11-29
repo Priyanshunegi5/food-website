@@ -31,18 +31,12 @@ export default function DirectiveInformation() {
                     <Image
                         alt="Content 1"
                         className="w-full rounded-lg"
-                        src={
-                            'https://source.unsplash.com/random/370x527?sig=' +
-                            Date.now()
-                        }
+                        src={'/images/branches/first/environment.jpg'}
                     />
                     <Image
                         alt="Content 2"
                         className="mt-4 w-full lg:mt-10 rounded-lg"
-                        src={
-                            'https://source.unsplash.com/random/370x527?sig=' +
-                            Date.now()
-                        }
+                        src={'/images/branches/first/service.jpg'}
                     />
                 </div>
             </div>
