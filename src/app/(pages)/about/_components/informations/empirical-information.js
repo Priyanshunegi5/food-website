@@ -39,18 +39,12 @@ export default function EmpiricalInformation() {
                     <Image
                         alt="dashboard image"
                         className="w-full dark:hidden"
-                        src={
-                            'https://source.unsplash.com/random/990x715?sig=' +
-                            Date.now()
-                        }
+                        src={'/images/branches/first/place.jpg'}
                     />
                     <Image
                         alt="dashboard image"
                         className="w-full hidden dark:block"
-                        src={
-                            'https://source.unsplash.com/random/990x715?sig=' +
-                            Date.now()
-                        }
+                        src={'/images/branches/first/place.jpg'}
                     />
                 </div>
             </div>
