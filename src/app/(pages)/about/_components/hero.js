@@ -29,7 +29,7 @@ export default function Hero() {
                     {/* Image */}
                     <div className="hidden sm:block sm:w-1/3 lg:w-3/5  relative">
                         <div className="max-w-xs md:max-w-sm m-auto">
-                            <Image src="https://www.udrop.com/file/L98m/Nishant.jpg" />
+                            <Image src="/images/company/nishant.jpg" />
                         </div>
                     </div>
                 </div>
