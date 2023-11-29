@@ -48,9 +48,6 @@ export default function Home() {
 
             {/* References */}
             <>
-                {/* Why Us */}
-                <WhyUs />
-
                 {/* From People */}
                 <Reviews />
 
