@@ -46,7 +46,7 @@ export default function FormLayout({ children }) {
                                 <div className="flex items-start">
                                     <div className="shrink-0">
                                         {/* Icon */}
-                                        <div className="inline-block rounded-md bg-primary-100 p-4 text-primary">
+                                        <div className="inline-block rounded-md bg-xanthous-500 dark:bg-xanthous-300 p-4 text-jet-300">
                                             {detail?.icon}
                                         </div>
                                     </div>
