@@ -10,7 +10,6 @@ export default function WhyUs() {
             description: `
             The toughest guys to please are pani puri lovers. They are also the most loyal to their pani puri wala.
             Golgappas are best enjoyed with brothers
-            
             `,
         },
         {
@@ -72,8 +71,8 @@ export default function WhyUs() {
     ]
 
     return (
-        <section className="relative block px-6 py-10 md:py-20 md:px-10 bg-crissxcross">
-            <div class="absolute -inset-1 bg-neutral-200 dark:bg-neutral-900 rounded-half opacity-20 transition duration-1000 blur-lg m-[10px]"></div>
+        <section className="relative block px-6 py-10 md:py-20 md:px-10">
+            <div class="absolute -inset-1 rounded-half opacity-20 transition duration-1000 m-[10px]"></div>
             <div className="relative mx-auto max-w-5xl text-center">
                 {/* Encourage */}
                 <span className="text-naples-yellow-300 dark:text-naples-yellow my-3 flex items-center justify-center font-medium uppercase tracking-wider">
