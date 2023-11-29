@@ -15,7 +15,7 @@ export default function Hero() {
                         <h2 class="text-3xl md:text-4xl leading-relaxed md:leading-snug mb-2">
                             {/* <span className="text-5xl sm:text-7xl">💓</span> */}
                             <span className="uppercase">{' us '}</span>
-                            <span className="text-poppy-500 dark:text-sandy-brown-500 text-4xl sm:text-5xl">
+                            <span className="animate-pulse text-poppy-500 dark:text-sandy-brown-500 text-4xl sm:text-5xl">
                                 AusGGW
                             </span>
                         </h2>
