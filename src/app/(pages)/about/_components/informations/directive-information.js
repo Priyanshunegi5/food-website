@@ -2,17 +2,17 @@ import { Image } from '@nextui-org/react'
 
 export default function DirectiveInformation() {
     return (
-        <section className="bg-zinc-200 dark:bg-zinc-950">
+        <section className="bg-zinc-200 dark:bg-zinc-950 my-10">
             {/* Directive Information */}
             <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                 <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                     {/* Title */}
-                    <p className="font-bold text-lg text-bold mb-4">
+                    <p className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
                         Best gol guppay wala in Dehradun
                     </p>
 
                     {/* Description */}
-                    <p className="text-base text-justify">
+                    <p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400 text-justify">
                         Located in Jogiwala, this eatery, known as Australian
                         Gol Guppy Wala, serves golgappas with diverse fillings
                         and flavors, providing an assortment of tastes to its
