@@ -5,8 +5,8 @@ import { web } from '@/config/router/web'
 import { layouts } from '@/data/layouts/layout'
 import Layout from '@/components/layouts/layout'
 import Hero from '@/app/(pages)/about/_components/hero'
-import Awards from '@/app/(pages)/about/_components/awards'
-import NeedHelp from '@/app/(pages)/about/_components/need-help'
+import Awards from '@/app/(pages)/about/_components/app'
+import JustStart from '@/app/(pages)/about/_components/just-start'
 import EmpiricalInformation from '@/app/(pages)/about/_components/informations/empirical-information'
 import DirectiveInformation from '@/app/(pages)/about/_components/informations/directive-information'
 import ConceptualInformation from '@/app/(pages)/about/_components/informations/conceptual-information'
@@ -28,14 +28,14 @@ export default function About() {
             {/* Hero Section */}
             <Hero />
 
+            {/* Just Start */}
+            <JustStart />
+
             {/* Details */}
-            <div className="bg-zinc-200 dark:bg-zinc-950">
+            <>
                 <ConceptualInformation />
                 <EmpiricalInformation />
-            </div>
-
-            {/* If User Need Help */}
-            <NeedHelp />
+            </>
 
             {/* Last But Not Least */}
             <DirectiveInformation />
