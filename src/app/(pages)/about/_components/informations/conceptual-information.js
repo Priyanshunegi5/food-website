@@ -3,7 +3,7 @@ import { Image } from '@nextui-org/react'
 export default function ConceptualInformation() {
     return (
         <>
-            <section className="">
+            <section className="bg-zinc-200 dark:bg-zinc-950 mb-10">
                 <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
                     {/* Images */}
                     <div>
