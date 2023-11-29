@@ -10,16 +10,12 @@ export default function ConceptualInformation() {
                         <Image
                             alt="dashboard image"
                             className="w-full dark:hidden"
-                            src={
-                                'https://australiangolguppaywala.com/images/fastfood/about.jpg'
-                            }
+                            src={'/images/branches/first/poster.jpg'}
                         />
                         <Image
                             alt="dashboard image"
                             className="w-full hidden dark:block"
-                            src={
-                                'https://australiangolguppaywala.com/images/fastfood/about.jpg'
-                            }
+                            src={'/images/branches/first/poster.jpg'}
                         />
                     </div>
 
