@@ -1,3 +1,5 @@
+import { setting } from '@/data/setting'
+
 export default function Map() {
     return (
         <div className="relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat">
@@ -6,9 +8,11 @@ export default function Map() {
                 width="100%"
                 loading="lazy"
                 allowfullscreen=""
-                title="google-map"
                 className="h-[80vh]"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11672.945750644447!2d-122.42107853750231!3d37.7730507907087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858070cc2fbd55%3A0xa71491d736f62d5c!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1619524992238!5m2!1sen!2sus"
+                title={setting?.name}
+                style={{ border: 0 }}
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.2307445700026!2d78.06212111044397!3d30.287492074697038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929213eed3c2f%3A0x84e02c81ade41cde!2sAustralian%20Gol%20Guppay%20Wala!5e0!3m2!1sen!2sin!4v1701294052138!5m2!1sen!2sin"
             ></iframe>
         </div>
     )
