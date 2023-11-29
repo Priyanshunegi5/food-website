@@ -8,31 +8,29 @@ export default function EmpiricalInformation() {
                 <div className="mt-4 md:mt-0">
                     {/* Title */}
                     <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-                        Where does it come from?
+                        A Gastronomic Expedition: Unveiling the Flavors of India
                     </h2>
 
                     {/* Description */}
                     <p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400 text-justify">
-                        Contrary to popular belief, Lorem Ipsum is not simply
-                        random text. It has roots in a piece of classical Latin
-                        literature from 45 BC, making it over 2000 years old.
-                        Richard McClintock, a Latin professor at Hampden-Sydney
-                        College in Virginia, looked up one of the more obscure
-                        Latin words, consectetur, from a Lorem Ipsum passage,
-                        and going through the cites of the word in classical
-                        literature, discovered the undoubtable source. Lorem
-                        Ipsum comes from sections 1.10.32 and 1.10.33 of "de
-                        Finibus Bonorum et Malorum" (The Extremes of Good and
-                        Evil) by Cicero, written in 45 BC. This book is a
-                        treatise on the theory of ethics, very popular during
-                        the Renaissance. The first line of Lorem Ipsum, "Lorem
-                        ipsum dolor sit amet..", comes from a line in section
-                        1.10.32. The standard chunk of Lorem Ipsum used since
-                        the 1500s is reproduced below for those interested.
-                        Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
-                        Malorum" by Cicero are also reproduced in their exact
-                        original form, accompanied by English versions from the
-                        1914 translation by H. Rackham.
+                        Their passion for food took them on a culinary journey
+                        across India, exploring the bustling lanes of Delhi and
+                        the narrow alleys of Kolkata. They delved deep into the
+                        heart of India’s street food culture, learning about the
+                        secret spices that give Indian street food its unique
+                        flavor, the perfect chutneys that add a tangy twist, and
+                        the art of balancing flavors to create a symphony on the
+                        palate. With this extensive knowledge, they curated a
+                        menu that offered a wide variety of chaat options from
+                        different regions of India. Their venture, “Australian
+                        Gol Guppay Wala”, was not just a food stall, but a
+                        celebration of India’s rich culinary heritage, presented
+                        with a touch of their own experiences. They were
+                        determined to give their customers a taste of authentic
+                        Indian chaat, right in their hometown of Dehradun. Their
+                        story is a testament to their love for food and their
+                        commitment to sharing the flavors of India with the
+                        world.
                     </p>
                 </div>
 
