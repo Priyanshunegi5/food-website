@@ -8,32 +8,21 @@ export default function DirectiveInformation() {
                 <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                     {/* Title */}
                     <p className="font-bold text-lg text-bold mb-4">
-                        What Makes Our Food Special?
+                        Best gol guppay wala in Dehradun
                     </p>
 
                     {/* Description */}
                     <p className="text-base text-justify">
-                        After Their Successful Stint In Australia, Experiencing
-                        Different Cultures And Cuisines, The Two Friends, Honey
-                        & Nishant, Decided It Was Time To Move Back To Their
-                        Roots In India To Start A New Phase Of Their Lives With
-                        "Australian Gol Guppay Wala". They Fell In Love With The
-                        Vibrant Street Food Scene In India, Particularly The
-                        Famous Chaat Stalls That Dotted Every Neighbourhood.
-                        With Their Love And Passion For Food, They Set Out To
-                        Achieve Their Vision Of Providing Authentic Chat
-                        Flavours To Their Customers. They Travelled Across
-                        India, Delving Into The Heart Of Its Street Food
-                        Culture. From The Bustling Lanes Of Delhi To The Narrow
-                        Alleys Of Kolkata, They Learned About The Secret Spices,
-                        The Perfect Chutneys, And The Art Of Balancing Flavours.
-                        Finally, Armed With Their Extensive Knowledge And A Menu
-                        Featuring A Wide Variety Of Chaat Options From Different
-                        Regions Of India, They Opened The Doors To Australian
-                        Gol Guppay Wala In Their Hometown (Dehradun) In India.
-                        They Were Determined To Give Their Customers A Taste Of
-                        India's Rich Culinary Heritage, Infused With Their Own
-                        Experiences.
+                        Located in Jogiwala, this eatery, known as Australian
+                        Gol Guppy Wala, serves golgappas with diverse fillings
+                        and flavors, providing an assortment of tastes to its
+                        customers Dehradun might have a variety of popular
+                        places where you can enjoy golgappa, The street food of
+                        India is probably the best in the world. You can fall in
+                        a love affair with the lip-smacking food .I am a very
+                        big fan of street food and I have tasted street food
+                        from all parts of India.The street foods that I love are
+                        ...!
                     </p>
                 </div>
 
