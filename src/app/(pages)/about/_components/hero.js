@@ -37,7 +37,7 @@ export default function Hero() {
                     <div class="p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3">
                         <div class="h-48 flex flex-wrap content-center">
                             <div>
-                                <Image src="https://www.udrop.com/file/L98m/Nishant.jpg" />
+                                <Image src="/images/company/nishant.jpg" />
                             </div>
                         </div>
                     </div>
