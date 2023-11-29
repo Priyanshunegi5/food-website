@@ -1,3 +1,4 @@
+import { setting } from '@/data/setting'
 import { Image } from '@nextui-org/react'
 
 export default function Motivate() {
@@ -17,11 +18,8 @@ export default function Motivate() {
                                     <article className="h-full">
                                         <div className="h-full">
                                             <Image
-                                                alt='""'
-                                                width="733"
-                                                height="412"
-                                                className="h-full object-cover"
-                                                src="https://source.unsplash.com/random/733x412?sig=12345"
+                                                src="/images/mascot/serve.png"
+                                                className="h-full object-cover p-5 sm:p-3"
                                             />
                                         </div>
                                     </article>
@@ -33,25 +31,35 @@ export default function Motivate() {
                                 <div className="leading-relaxed">
                                     {/* Title */}
                                     <h2 className="leading-tight text-4xl font-bold">
-                                        Lorem Ipsum
+                                        Need Help? Reach Out to Us!
                                     </h2>
 
                                     {/* Summary */}
                                     <p className="mt-4 text-justify">
-                                        "Neque porro quisquam est qui dolorem
-                                        ipsum quia dolor sit amet, consectetur,
-                                        adipisci velit..." "There is no one who
-                                        loves pain itself, who seeks after it
-                                        and wants to have it, simply because it
-                                        is pain..."
+                                        The team is ready to help with any
+                                        issues, answer questions, and receive
+                                        feedback to improve the user experience.
                                     </p>
 
                                     {/* Description */}
                                     <p className="mt-4 text-justify">
-                                        Lorem Ipsum is simply dummy text of the
-                                        printing and typesetting industry. Lorem
-                                        Ipsum has been the industry's standard
-                                        dummy text ever since the 1500s
+                                        We understand that you may have
+                                        questions or need assistance while using
+                                        our website, “{setting?.name}”. We’re
+                                        here to help! Whether you’re having
+                                        trouble navigating the website, need
+                                        more information about our menu, or want
+                                        to give us feedback, we’d love to hear
+                                        from you. Our dedicated team is always
+                                        ready to assist you and ensure your
+                                        experience with us is smooth and
+                                        enjoyable. Don’t hesitate to get in
+                                        touch with us through the contact
+                                        options available in the website.
+                                        Remember, no question is too small, and
+                                        your feedback is invaluable to us. Let’s
+                                        embark on this culinary journey
+                                        together!
                                     </p>
 
                                     {/* External Links */}
