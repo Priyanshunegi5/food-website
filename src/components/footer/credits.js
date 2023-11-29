@@ -10,7 +10,7 @@ export default function Credits() {
     const router = useRouter(web)
 
     return (
-        <div className="bg-slate-200 dark:bg-slate-950 w-full p-4 text-center">
+        <div className="bg-zinc-300 dark:bg-zinc-800 w-full p-4 text-center">
             {/* Copyright Year */}
             <span className="text-black dark:text-white">
                 © {new Date().getFullYear()} - {new Date().getFullYear() + 1}
